@@ -4,3 +4,5 @@
 
 - Shifting 'tens' surface and 'ones' surface, to create a number while showing THAT amount of dots
 (have a paper prototype in the attic, could be physical or SVG clipped groups to translate by scripting)
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath
+
