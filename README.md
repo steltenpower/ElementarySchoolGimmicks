@@ -4,7 +4,7 @@
 
 - Shifting 'tens' surface and 'ones' surface, to create a number while showing THAT amount of dots
 
-paper prototype:
+paper prototype (tilt your head, sorry):
 ![3 layers: one ViewBox frame, a tens and a ones layer to pull through it](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200412_185523604.jpg)
 The Excel file shows sort of it how to build it.
 
