@@ -4,11 +4,12 @@
 
 - Shifting 'tens' surface and 'ones' surface, to create a number while showing THAT amount of dots
 
-paper prototype (tilt your head, sorry):
+paper prototype (Why is the image shown rotated here, but oriented correctly when shown on its own GitHub):
 ![3 layers: one ViewBox frame, a tens and a ones layer to pull through it](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200412_185523604.jpg)
 The Excel file shows sort of it how to build it.
 
-https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath
+I'm thinking a proper product should be in wood.
 
-https://developer.mozilla.org/en-US/docs/Web/SVG/Element/mask
+To build it digitally:
+https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath , https://developer.mozilla.org/en-US/docs/Web/SVG/Element/mask
 
