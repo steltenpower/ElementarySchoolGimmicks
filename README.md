@@ -5,10 +5,18 @@
 - Shifting 'tens' surface and 'ones' surface, to create a number while showing THAT amount of dots
 
 paper prototypes (left, mid, right makes a stack bottom, mid, top), make sure to zoom in enough to read:
+add and substract:
 ![add and substract](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_030946666.jpg)
+
+multiply:
 ![multiply](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_031056531.jpg)
+
+naming tens and ones:
 ![naming tens and ones](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_031234236.jpg)
+
+another naming tens and ones
 ![naming tens and ones v2](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_031335156.jpg)
+
 The Excel file has only a few hints on how they're designed
 
 I'm thinking a proper product should be in wood.
