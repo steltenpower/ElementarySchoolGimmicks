@@ -4,9 +4,12 @@
 
 - Shifting 'tens' surface and 'ones' surface, to create a number while showing THAT amount of dots
 
-paper prototype (Why is the image shown rotated here, but oriented correctly when shown on its own GitHub):
-![3 layers: one ViewBox frame, a tens and a ones layer to pull through it](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200412_185523604.jpg)
-The Excel file shows sort of it how to build it.
+paper prototypes (left, mid, right makes a stack bottom, mid, top), make sure to zoom in enough to read:
+![add and substract](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_030946666.jpg)
+![multiply](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_031056531.jpg)
+![naming tens and ones](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_031234236.jpg)
+![naming tens and ones v2](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_031335156.jpg)
+The Excel file has only a few hints on how they're designed
 
 I'm thinking a proper product should be in wood.
 
