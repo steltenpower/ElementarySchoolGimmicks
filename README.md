@@ -5,7 +5,8 @@
 - Shifting 'tens' surface and 'ones' surface, to create a number while showing THAT amount of dots
 
 paper prototypes (left, mid, right makes a stack bottom, mid, top), make sure to zoom in enough to read:
-add and substract:
+
+Add and substract:
 ![add and substract](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_030946666.jpg)
 
 multiply:
