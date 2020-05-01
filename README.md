@@ -16,7 +16,18 @@ another
 #### Add and substract (being 2 directions of the same thing):
 ![add and substract](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_030946666.jpg)
 
-#### multiplication::
+#### multiplication
+
+![background](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_161337114.jpg)
+![x-mask](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_161355567_HDR.jpg)
+![y-mask](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_161417920_HDR.jpg)
+
+![1x1](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_160900038.jpg)
+![10x1](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_160157134.jpg)
+![1x10]()
+![10x10](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_154725745.jpg)
+
+
 ![multiply](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_031056531.jpg)
 
 
