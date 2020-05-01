@@ -2,7 +2,7 @@
 
 ## 1: Calculators to maybe help learn the abstraction of amounts coded in digits; by seeing those change at the same time.
 
-(photos of paper quick&dirty prototypes. Annoyingly rotated sometimes)
+(photos of paper prototypes. Annoyingly rotated sometimes)
 
 
 #### 1a: How numbers are constructed from digits and how to pronounce them in Dutch
