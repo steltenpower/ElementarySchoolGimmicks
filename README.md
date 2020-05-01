@@ -38,10 +38,6 @@ Some calculation examples:
 ![1x1](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_160900038.jpg)
 
 
-![multiply](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_031056531.jpg)
-
-
-
 To build all of the above digitally:
 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath , https://developer.mozilla.org/en-US/docs/Web/SVG/Element/mask
 
