@@ -1,4 +1,4 @@
-# ELementary School Gimmicks
+# Elementary School Gimmicks
 
 ## 1: Calculators to maybe help learn the abstraction of amounts coded in digits; by seeing those change simultaneously
 
