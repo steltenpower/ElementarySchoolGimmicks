@@ -28,14 +28,14 @@ vertical sliding mask:
 
 Some calculation examples:
 
-1x1
-![1x1](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_160900038.jpg)
+10x10
+![10x10](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_154725745.jpg)
 10x1
 ![10x1](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_160157134.jpg)
 1x10
 ![1x10](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/IMG_20200501_160157134.jpg)
-10x10
-![10x10](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_154725745.jpg)
+1x1
+![1x1](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_160900038.jpg)
 
 
 ![multiply](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_031056531.jpg)
