@@ -1,6 +1,6 @@
 # Elementary School Gimmicks
 
-## 1: Calculators to maybe help learn the abstraction of amounts coded in digits; by seeing those change simultaneously
+## 1: Calculators to maybe help learn the abstraction of amounts coded in digits; by seeing those change at the same time.
 
 (photos of paper quick&dirty prototypes. Annoyingly rotated sometimes)
 
