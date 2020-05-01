@@ -33,7 +33,7 @@ Some calculation examples:
 10x1
 ![10x1](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_160157134.jpg)
 1x10
-![1x10](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/IMG_20200501_160157134.jpg)
+![1x10](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/IMG_20200501_161417920_HDR.jpg)
 1x1
 ![1x1](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_160900038.jpg)
 
