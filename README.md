@@ -19,14 +19,22 @@ another
 ![add and substract](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_030946666.jpg)
 
 #### 1c: multiplication
-
+background:
 ![background](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_161337114.jpg)
+horizontal sliding mask:
 ![x-mask](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_161355567_HDR.jpg)
+vertical sliding mask:
 ![y-mask](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_161417920_HDR.jpg)
 
+Some calculation examples:
+
+1x1
 ![1x1](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_160900038.jpg)
+10x1
 ![10x1](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_160157134.jpg)
-![1x10]()
+1x10
+![1x10](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/IMG_20200501_160157134.jpg)
+10x10
 ![10x10](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_154725745.jpg)
 
 
