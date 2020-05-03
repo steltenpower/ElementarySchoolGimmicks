@@ -18,7 +18,7 @@ very similar, but not put together
 #### 1b: Add and substract (being 2 directions of the same thing):
 ![add and substract](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_030946666.jpg)
 
-#### 1c: multiplication
+#### 1c: multiplication<a name="multiplication"></a>
 background:
 ![background](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_161337114.jpg)
 horizontal sliding mask:
