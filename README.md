@@ -14,6 +14,8 @@ Shifting 'tens' and 'ones', to create a number while showing THAT amount of dots
 very similar, but not put together
 ![naming tens and ones v2](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_031335156.jpg)
 
+latest improvement
+![perfect naming](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/split_naamgeving.png)
 
 #### 1b: Add and substract (being 2 directions of the same thing):
 ![add and substract](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_030946666.jpg)
