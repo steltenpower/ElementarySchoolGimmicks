@@ -42,6 +42,7 @@ Some calculation examples:
 
 To build all of the above digitally:
 https://www.sitepoint.com/masking-in-the-browser-with-css-and-svg/
+http://www.petercollingridge.co.uk/tutorials/svg/interactive/dragging/
 
 ## 2: Numbered kid juwelry
 - Rings/bracelets that show digits (similar to what's on combination lock). With a viewing window to read the number from and to keep 2 rings together. Highlight zeroes as those trigger 'carry over'.
