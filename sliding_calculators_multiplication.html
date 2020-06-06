@@ -25,8 +25,8 @@ var ratio;
 function touchPrepare(){
 	window.addEventListener('touchstart',function(e){
 	 	var touch=e.targetTouches[0];
-		t0x=parseFloat(touch.screenX);
-		t0y=parseFloat(touch.screenY);
+		t0x=parseFloat(touch.pageX);
+		t0y=parseFloat(touch.pageY);
 	});
 	window.addEventListener('touchmove',function(e){
 		var touch=e.targetTouches[0];
