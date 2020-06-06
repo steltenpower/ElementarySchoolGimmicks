@@ -14,6 +14,8 @@ var t0x;
 var t0y;
 var g_x;
 var g_y;
+var min;
+var ratio;
 function touchPrepare(){
 	window.addEventListener('touchstart',function(e){
 	 	var touch=e.targetTouches[0];
@@ -24,24 +26,29 @@ function touchPrepare(){
 		var touch=e.targetTouches[0];
 		var t1x=parseFloat(touch.pageX);
 		var t1y=parseFloat(touch.pageY);
-		var new_x=(t1x-t0x)/20+parseFloat(g_x.getAttribute('transform').split('(')[1].split(',')[0].trim());
+		var new_x=(t1x-t0x)/ratio+parseFloat(g_x.getAttribute('transform').split('(')[1].split(',')[0].trim());
 		if (new_x<1) new_x=1;
 		if (new_x>10) new_x=10;
 		g_x.setAttribute('transform','translate('+new_x+',0)');
-		var new_y=(t0y-t1y)/20+parseFloat(g_y.getAttribute('transform').split(')')[0].split(',')[1].trim());
+		var new_y=(t0y-t1y)/ratio+parseFloat(g_y.getAttribute('transform').split(')')[0].split(',')[1].trim());
 		if (new_y<1) new_y=1;
 		if (new_y>10) new_y=10;
 		g_y.setAttribute('transform','translate(0,'+new_y+')');
 	});
 	g_x=document.getElementById("x_mask").children[0];
 	g_y=document.getElementById("y_mask").children[0];
+	min=Math.min(window.innerWidth,window.innerHeight);
+	ratio=min/22;
+	var svg=document.getElementsByTagName("svg")[0];
+	svg.setAttribute("width",min+"px");
+	svg.setAttribute("height",min+"px");
 }
 	
 </script>
 </head>
 <body onload="touchPrepare()">
 
-<svg viewBox="-12 -12 22 22" width="440px" height="440px" transform="scale(1,-1)">
+<svg viewBox="-12 -12 22 22" transform="scale(1,-1)">
 
 <mask id="x_mask">
 	<g transform="translate( 9, 0)">
