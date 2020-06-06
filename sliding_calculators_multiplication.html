@@ -25,8 +25,12 @@ function touchPrepare(){
 		var t1x=parseFloat(touch.pageX);
 		var t1y=parseFloat(touch.pageY);
 		var new_x=(t1x-t0x)/20+parseFloat(g_x.getAttribute('transform').split('(')[1].split(',')[0].trim());
+		if (new_x<1) new_x=1;
+		if (new_x>10) new_x=10;
 		g_x.setAttribute('transform','translate('+new_x+',0)');
-		var new_y=(t1y-t0y)/20+parseFloat(g_y.getAttribute('transform').split(')')[0].split(',')[1].trim());
+		var new_y=(t0y-t1y)/20+parseFloat(g_y.getAttribute('transform').split(')')[0].split(',')[1].trim());
+		if (new_y<1) new_y=1;
+		if (new_y>10) new_y=10;
 		g_y.setAttribute('transform','translate(0,'+new_y+')');
 	});
 	g_x=document.getElementById("x_mask").children[0];
