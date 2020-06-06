@@ -35,10 +35,12 @@ function touchPrepare(){
 		var new_x=(t1x-t0x)/ratio+parseFloat(g_x.getAttribute('transform').split('(')[1].split(',')[0].trim());
 		if (new_x<1) new_x=1;
 		if (new_x>10) new_x=10;
+		new_x=Math.round(new_x);
 		g_x.setAttribute('transform','translate('+new_x+',0)');
 		var new_y=(t0y-t1y)/ratio+parseFloat(g_y.getAttribute('transform').split(')')[0].split(',')[1].trim());
 		if (new_y<1) new_y=1;
 		if (new_y>10) new_y=10;
+		new_y=Math.round(new_y);
 		g_y.setAttribute('transform','translate(0,'+new_y+')');
 	});
 	g_x=document.getElementById("x_mask").children[0];
