@@ -42,7 +42,7 @@ Some calculation examples:
 
 To build all of the above digitally:
 https://www.sitepoint.com/masking-in-the-browser-with-css-and-svg/
-https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-rule
+https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-rule#Example_2
 http://www.petercollingridge.co.uk/tutorials/svg/interactive/dragging/
 
 ## 2: Numbered kid juwelry
