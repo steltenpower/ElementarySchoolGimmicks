@@ -15,15 +15,18 @@ function text(x,y,str){
   newText.appendChild(textNode);
   document.getElementById("numbers").appendChild(newText);
 }
-function pathsCompile(){
-  paths=document.getElementsByTagName("path");
-/*
-  paths.forEach(element.d=>{
-    var newStr = str.replace(/\d?n(?:[+-]\d+)?/g, function(match) {
-      element.setAttributeNS(null,"d",eval(match.split("").replace("2n","2*n")).join("");
+function pCompile(elm){
+  str=elm.getAttributeNS(null,"d");
+    var newStr = str.replace(/\d?n(?:[+\-]\d+)?/g, function(match) {
+       return eval(match.replace("2n","2*n"));
     });
-  }
-*/
+  elm.setAttributeNS(null,"d",newStr);
+}
+function pathsCompile(){
+  pCompile(document.getElementById("content_outline"));
+  pCompile(document.getElementById("slider_outline"));
+  pCompile(document.getElementById("slider_opaque"));
+  pCompile(document.getElementById("slider_transparent"));
 }
 function init(e){
   var params = (new URL(document.location)).searchParams;
