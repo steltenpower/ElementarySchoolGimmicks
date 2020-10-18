@@ -1,14 +1,14 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" viewBox="-1 -1 2 2"
+<svg version="1.1" viewBox="-30 -30 60 60"
      xmlns="http://www.w3.org/2000/svg" onload="init(evt)">
 <script type="text/javascript"><![CDATA[
 function text(x,y,str){
   var newText = document.createElementNS("http://www.w3.org/2000/svg","text");
   newText.setAttributeNS(null,"x",x);
-  newText.setAttributeNS(null,"y",y);
-  newText.setAttributeNS(null,"font-size","100");
+  newText.setAttributeNS(null,"y",-y);
+  newText.setAttributeNS(null,"font-size","0.5");
   newText.setAttributeNS(null,"text-anchor","middle");
   newText.setAttributeNS(null,"dominant-baseline","central");
   var textNode = document.createTextNode(str);
@@ -17,7 +17,7 @@ function text(x,y,str){
 }
 function pCompile(elm){
   str=elm.getAttributeNS(null,"d");
-    var newStr = str.replace(/\d?n(?:[+\-]\d+)?/g, function(match) {
+    var newStr = str.replace(/[\-]?\d?n(?:[+\-]\d+)?/g, function(match) {
        return eval(match.replace("2n","2*n"));
     });
   elm.setAttributeNS(null,"d",newStr);
@@ -68,14 +68,15 @@ function init(e){
 }
 ]]>
 </script>
-    <rect x="-1" y="-1" height="2" width="2"/>
+    <rect x="-1" y="-1" height="2" width="2" fill="red" />
 
 <g id="numbers"/>
+<!--
 <path id="content_outline" d="M0,-8 v2n+27 h2 v-8 h2n+7 v8 h2 v-2n-27 h-2 v8 h-2n-7 v-8 h-2 M0,0 l2,2 M0,2n+11 l2,-2 M2n+11,2n+11 l-2,-2 M2n+11,0 l-2,2" />
 <path id="slider_outline" d="M2,0 vn+2 h-2 vn+7 h+2 vn+2 h2n+9 v-n-2 h2 v-n-7 h-2 v-n-2 h-2n-9" />
 <path id="slider_opaque" d="M3,6 v2n+1 h2 v-2n-1 h-2 M6,n+7 vn h2n+2 v-n h-2n-2 Mn+7,2n+8 vn hn+1 v-n h-n-1" />
 <path id="slider_transparent" d="M3,6 vn+1 h2 v-1 h-1 v-n h-1 M6,3 vn+4 hn+1 v-n-4 h-n-1 Mn+7,2n+7 v1 hn+1 v-1 h-n-1" />
-
+-->
 <!--
 // Let Chrome handle printing (to PDF)
 // F12>CopyOuterHTML on <html>, save in file ...OR... CopyElement and then at https://jakearchibald.github.io/svgomg/ "paste markup"
