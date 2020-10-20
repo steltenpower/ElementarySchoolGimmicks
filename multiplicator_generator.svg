@@ -1,16 +1,14 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" viewBox="-30 -30 60 60"
-     xmlns="http://www.w3.org/2000/svg" onload="init(evt)">
+<svg version="1.1" viewBox="-8 -30 50 50"
+     xmlns="http://www.w3.org/2000/svg" onload="init(evt)" >
 <script type="text/javascript"><![CDATA[
 function text(x,y,str){
   var newText = document.createElementNS("http://www.w3.org/2000/svg","text");
   newText.setAttributeNS(null,"x",x);
   newText.setAttributeNS(null,"y",-y);
-  newText.setAttributeNS(null,"font-size","0.5");
-  newText.setAttributeNS(null,"text-anchor","middle");
-  newText.setAttributeNS(null,"dominant-baseline","central");
+  newText.setAttributeNS(null,"font-size",0.5);
   var textNode = document.createTextNode(str);
   newText.appendChild(textNode);
   document.getElementById("numbers").appendChild(newText);
@@ -23,10 +21,10 @@ function pCompile(elm){
   elm.setAttributeNS(null,"d",newStr);
 }
 function pathsCompile(){
-  pCompile(document.getElementById("content_outline"));
-  pCompile(document.getElementById("slider_outline"));
-  pCompile(document.getElementById("slider_opaque"));
-  pCompile(document.getElementById("slider_transparent"));
+  paths=document.getElementsByTagName("path");
+  for (p=0; p<(paths.length);p+=1){
+    pCompile(paths[p]);
+  }
 }
 function init(e){
   var params = (new URL(document.location)).searchParams;
@@ -49,8 +47,8 @@ function init(e){
   //
   // numbers and emoji
   for (i = 0; i <= n; i+=1) {
-    small=4.5;
-    big=i+6.5;
+    small=4;
+    big=i+6;
     text(big,small,i);
     text(small,big,i);
     if (i>0){
@@ -59,27 +57,50 @@ function init(e){
     }
     for (j = 0; j <= n; j+=1) {
       if ((i*j)>0){
-        text(i+6.5,j+6.5,icon);
+        text(i+6,j+6,icon);
       }
-      text(i+n+7.5,j+n+7.5,i*j);
+      text(i+n+7,j+n+7,i*j);
     }
   }
   pathsCompile();
 }
 ]]>
 </script>
-    <rect x="-1" y="-1" height="2" width="2" fill="red" />
+   <style type="text/css" >
+      <![CDATA[
+        rect,path{
+           stroke-width: 0;
+        }
+        text{
+          text-anchor      : middle;
+          dominant-baseline: central;
+          fill             : black;
+        }
+      ]]>
+    </style>
+<!-- <defs>
+  <mask id="transparent"> -->
+   <g transform="scale(1,-1)">
+    <path fill="black" d="M3,6 vn+1 h2 v-1 h-1 v-n h-1 M6,3 vn+4 hn+1 v-n-4 h-n-1 Mn+7,2n+7 v1 hn+1 v-1 Z"/>
+   </g>
+<!--   </mask>
+</defs> -->
+<g transform="scale(1,-1)">
+  <rect id="viewBoxPlus" fill="grey"  fill-opacity="0.1" x="-9"   y="-9"   width="52"  height="52"/>
+  <rect id="viewBox"     fill="pink"  fill-opacity="0.2" x="-8"   y="-8"   width="50"  height="50"/>
+  <rect id="units"       fill="grey"  fill-opacity="0.5" x= "0"   y= "0"   width="1"   height= "1"/>
+  <rect id="origin"      fill="grey"  fill-opacity="0.5" x="-0.2" y="-0.2" width="0.4" height= "0.4"/>
 
-<g id="numbers"/>
+  <path                  fill="green" fill-opacity="0.1" d="M0,-8 v2n+27 h2 v-8 h2n+7 v8 h2 v-2n-27 h-2 v8 h-2n-7 v-8 h-2 M0,0 l2,2 M0,2n+11 l2,-2 M2n+11,2n+11 l-2,-2 M2n+11,0 l-2,2"/>
+  <g id="numbers" transform="translate(0.5,0.5)scale(1,-1)"/>
+
+  <g mask="url(#transparent)" transform="translate(0,0)"><!-- -11<z<0 -->
+    <path id="outline"   fill="red"   fill-opacity="0.4" d="M2,0 vn+2 h-2 vn+7 h+2 vn+2 h2n+9 v-n-2 h2 v-n-7 h-2 v-n-2 Z"/>
+    <path id="hiding"    fill="red"   fill-opacity="0.8" d="M3,6 v2n+1 h2 v-2n-1 h-2 M6,n+7 vn h2n+2 v-n h-2n-2 Mn+7,2n+8 vn hn+1 v-n Z"/>
+  </g>
 <!--
-<path id="content_outline" d="M0,-8 v2n+27 h2 v-8 h2n+7 v8 h2 v-2n-27 h-2 v8 h-2n-7 v-8 h-2 M0,0 l2,2 M0,2n+11 l2,-2 M2n+11,2n+11 l-2,-2 M2n+11,0 l-2,2" />
-<path id="slider_outline" d="M2,0 vn+2 h-2 vn+7 h+2 vn+2 h2n+9 v-n-2 h2 v-n-7 h-2 v-n-2 h-2n-9" />
-<path id="slider_opaque" d="M3,6 v2n+1 h2 v-2n-1 h-2 M6,n+7 vn h2n+2 v-n h-2n-2 Mn+7,2n+8 vn hn+1 v-n h-n-1" />
-<path id="slider_transparent" d="M3,6 vn+1 h2 v-1 h-1 v-n h-1 M6,3 vn+4 hn+1 v-n-4 h-n-1 Mn+7,2n+7 v1 hn+1 v-1 h-n-1" />
+Let Chrome handle printing (to PDF)
+F12>CopyOuterHTML on <html>, save in file ...OR... CopyElement and then at https://jakearchibald.github.io/svgomg/ "paste markup"
+Black&White Emoji Font, Noto Sans Emoji
 -->
-<!--
-// Let Chrome handle printing (to PDF)
-// F12>CopyOuterHTML on <html>, save in file ...OR... CopyElement and then at https://jakearchibald.github.io/svgomg/ "paste markup"
-// Black&White Emoji Font, Noto Sans Emoji
--->
-</svg>
+</g></svg>
