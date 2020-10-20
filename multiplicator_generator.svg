@@ -1,8 +1,8 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" viewBox="-8 -30 50 50"
-     xmlns="http://www.w3.org/2000/svg" onload="init(evt)" >
+<svg version="1.1" viewBox="-8-42 50 50"
+     xmlns="http://www.w3.org/2000/svg" onload="init(evt)">
 <script type="text/javascript"><![CDATA[
 function text(x,y,str){
   var newText = document.createElementNS("http://www.w3.org/2000/svg","text");
@@ -27,6 +27,10 @@ function pathsCompile(){
   }
 }
 function init(e){
+// set viewBox based on n and possible positions of sliders, or remove viewBox?
+// show only requested layers
+// test something instead of X; poomoji?
+// test URLparameters
   var params = (new URL(document.location)).searchParams;
   if ("n" in params === false){
     n = 11;
@@ -66,41 +70,45 @@ function init(e){
 }
 ]]>
 </script>
-   <style type="text/css" >
-      <![CDATA[
-        rect,path{
-           stroke-width: 0;
-        }
-        text{
-          text-anchor      : middle;
-          dominant-baseline: central;
-          fill             : black;
-        }
-      ]]>
-    </style>
-<!-- <defs>
-  <mask id="transparent"> -->
-   <g transform="scale(1,-1)">
-    <path fill="black" d="M3,6 vn+1 h2 v-1 h-1 v-n h-1 M6,3 vn+4 hn+1 v-n-4 h-n-1 Mn+7,2n+7 v1 hn+1 v-1 Z"/>
-   </g>
-<!--   </mask>
-</defs> -->
+<style type="text/css" >
+<![CDATA[
+  rect,path{
+    stroke-width: 0;
+  }
+  text{
+    text-anchor      : middle;
+    dominant-baseline: central;
+    fill             : black;
+  }
+]]>
+</style>
+<defs>
+  <mask id="transparent">
+    <g transform="scale(1,1)">
+      <rect x="-100" y="-100" width="200" height="200" fill="white" />
+      <path fill="black" d="M3,6 vn+1 h2 v-1 h-1 v-n h-1 M6,3 vn+4 hn+1 v-n-4 h-n-1 Mn+7,2n+7 v1 hn+1 v-1 Z"/>
+    </g>
+  </mask>
+</defs>
 <g transform="scale(1,-1)">
+<g id="reference" display="non">
   <rect id="viewBoxPlus" fill="grey"  fill-opacity="0.1" x="-9"   y="-9"   width="52"  height="52"/>
   <rect id="viewBox"     fill="pink"  fill-opacity="0.2" x="-8"   y="-8"   width="50"  height="50"/>
   <rect id="units"       fill="grey"  fill-opacity="0.5" x= "0"   y= "0"   width="1"   height= "1"/>
   <rect id="origin"      fill="grey"  fill-opacity="0.5" x="-0.2" y="-0.2" width="0.4" height= "0.4"/>
-
+</g>
+<g id="backlayer" display="non">
   <path                  fill="green" fill-opacity="0.1" d="M0,-8 v2n+27 h2 v-8 h2n+7 v8 h2 v-2n-27 h-2 v8 h-2n-7 v-8 h-2 M0,0 l2,2 M0,2n+11 l2,-2 M2n+11,2n+11 l-2,-2 M2n+11,0 l-2,2"/>
   <g id="numbers" transform="translate(0.5,0.5)scale(1,-1)"/>
-
-  <g mask="url(#transparent)" transform="translate(0,0)"><!-- -11<z<0 -->
+</g>
+  <g id="slider" mask="url(#transparent)" transform="translate(0,-11)"><!-- -11<y<0 -->
     <path id="outline"   fill="red"   fill-opacity="0.4" d="M2,0 vn+2 h-2 vn+7 h+2 vn+2 h2n+9 v-n-2 h2 v-n-7 h-2 v-n-2 Z"/>
-    <path id="hiding"    fill="red"   fill-opacity="0.8" d="M3,6 v2n+1 h2 v-2n-1 h-2 M6,n+7 vn h2n+2 v-n h-2n-2 Mn+7,2n+8 vn hn+1 v-n Z"/>
+    <!-- <path id="hiding"    fill="red"   fill-opacity="0.4" d="M3,6 v2n+1 h2 v-2n-1 h-2 M6,n+7 vn h2n+2 v-n h-2n-2 Mn+7,2n+8 vn hn+1 v-n Z"/> -->
   </g>
+</g>
 <!--
 Let Chrome handle printing (to PDF)
 F12>CopyOuterHTML on <html>, save in file ...OR... CopyElement and then at https://jakearchibald.github.io/svgomg/ "paste markup"
 Black&White Emoji Font, Noto Sans Emoji
 -->
-</g></svg>
+</svg>
