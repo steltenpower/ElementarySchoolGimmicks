@@ -103,7 +103,7 @@ function init(e){
 </g>
   <g id="slider" mask="url(#transparent)" transform="translate(0,-11)"><!-- -11<y<0 -->
     <path id="outline"   fill="red"   fill-opacity="0.4" d="M2,0 vn+2 h-2 vn+7 h+2 vn+2 h2n+9 v-n-2 h2 v-n-7 h-2 v-n-2 Z"/>
-    <!-- <path id="hiding"    fill="red"   fill-opacity="0.4" d="M3,6 v2n+1 h2 v-2n-1 h-2 M6,n+7 vn h2n+2 v-n h-2n-2 Mn+7,2n+8 vn hn+1 v-n Z"/> -->
+    <path id="hiding"    fill="red"   fill-opacity="0.2" d="M3,6 v2n+1 h2 v-2n-1 h-2 M6,n+7 vn h2n+2 v-n h-2n-2 Mn+7,2n+8 vn hn+1 v-n Z"/>
   </g>
 </g>
 <!--
