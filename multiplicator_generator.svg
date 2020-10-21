@@ -107,6 +107,7 @@ function init(e){
   </g>
 </g>
 <!--
+Not only use n, but use 1-character function names that are a function of n and do a search and replace with using () and then replace n with value and eval()
 Let Chrome handle printing (to PDF)
 F12>CopyOuterHTML on <html>, save in file ...OR... CopyElement and then at https://jakearchibald.github.io/svgomg/ "paste markup"
 Black&White Emoji Font, Noto Sans Emoji
