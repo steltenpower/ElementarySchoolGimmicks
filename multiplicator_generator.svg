@@ -99,11 +99,16 @@ function init(e){
 </g>
 <g id="backlayer" display="non">
   <path                  fill="green" fill-opacity="0.1" d="M0,-8 v2n+27 h2 v-8 h2n+7 v8 h2 v-2n-27 h-2 v8 h-2n-7 v-8 h-2 M0,0 l2,2 M0,2n+11 l2,-2 M2n+11,2n+11 l-2,-2 M2n+11,0 l-2,2"/>
-  <g id="numbers" transform="translate(0.5,0.5)scale(1,-1)"/>
+<g transform="translate(0.5,0.5)scale(1,-1)">
+  <g id="numbers"/>
+  <g id="area"/>
+  <g id="x_axis"/>
+  <g id="y_axis"/>
+</g>
 </g>
   <g id="slider" mask="url(#transparent)" transform="translate(0,-11)"><!-- -11<y<0 -->
     <path id="outline"   fill="red"   fill-opacity="0.4" d="M2,0 vn+2 h-2 vn+7 h+2 vn+2 h2n+9 v-n-2 h2 v-n-7 h-2 v-n-2 Z"/>
-    <path id="hiding"    fill="red"   fill-opacity="0.2" d="M3,6 v2n+1 h2 v-2n-1 h-2 M6,n+7 vn h2n+2 v-n h-2n-2 Mn+7,2n+8 vn hn+1 v-n Z"/>
+    <g transform="translate(18,29)"><path id="hiding"    fill="red"   fill-opacity="0.2" d="M0,0 vn+1 hn+1 v-2n-1 h-n-1    h-n-1 vn z   M-n-2,0 h-2 v-2n-1 h2 z"/></g>
   </g>
 </g>
 <!--
