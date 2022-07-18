@@ -9,7 +9,7 @@
 
 Shifting 'tens' and 'ones', to create a number while showing THAT amount of dots
 
-![naming tens and ones](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_031234236.jpg)
+<img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_031234236.jpg" style="transform: rotate(90deg);">
 
 very similar, but not put together
 ![naming tens and ones v2](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_031335156.jpg)
