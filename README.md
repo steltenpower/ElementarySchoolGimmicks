@@ -20,7 +20,7 @@ improved, but not put together
 
 #### 1c1: multiplication<a name="multiplication"></a>
 background:
-![background](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_161337114.jpg)
+![background](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/multiply_background.jpg)
 horizontal sliding mask:
 ![x-mask](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_161355567_HDR.jpg)
 vertical sliding mask:
