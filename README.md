@@ -22,9 +22,9 @@ improved, but not put together
 background:
 ![background](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/multiply_background.jpg)
 horizontal sliding mask:
-![x-mask](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_161355567_HDR.jpg)
+![x-mask](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/horizontal_sliding_mask.jpg)
 vertical sliding mask:
-![y-mask](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_161417920_HDR.jpg)
+![y-mask](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/vertical_sliding_mask.jpg)
 
 Some calculation examples:
 
