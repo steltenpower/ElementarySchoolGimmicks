@@ -41,7 +41,8 @@ Some calculation examples:
 I drew and cut this. Not photographed yet
 
 #### 1c3: multiplication, a static matrix <a name="multiplication_static"></a>
-Have 2 perpendicular axis, both going from 0 to 66, with the distance between the ticks being 1,2,3,4,5,6,7,8,9,10,11 and that number written between the ticks. Not extend those ticks into lines all the way through the matrix. A variation on https://upload.wikimedia.org/wikipedia/commons/3/3f/Multiplication_table_to_scale.svg
+![keersommen met aantallen](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/keersommen_met_aantallen.jpg)
+A variation on https://upload.wikimedia.org/wikipedia/commons/3/3f/Multiplication_table_to_scale.svg
 
 
 Some technical hints to make it interactively on-line:
