@@ -1,5 +1,6 @@
 # Elementary School Gimmicks
-![spelen!](https://steltenpower.github.io/ElementarySchoolGimmicks/sliding_calculators_multiplication.html)
+<a title="play !" href="https://steltenpower.github.io/ElementarySchoolGimmicks/sliding_calculators_multiplication.html">
+<img src="https://repository-images.githubusercontent.com/217832815/2aec6500-1022-11eb-952a-1796fdb14235"></a>
 ## 1: Calculators to maybe help learn the abstraction of amounts coded in digits; by seeing those change at the same time.
 
 (photos of paper prototypes. Annoyingly rotated sometimes)
