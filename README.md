@@ -35,7 +35,7 @@ Some calculation examples:
 1x10
 ![1x10](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/1x10.jpg)
 1x1
-![1x1](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_160900038.jpg)
+![1x1](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/1x1.jpg)
 
 #### 1c2: multiplication, simpler in 2 layers instead of 3<a name="multiplication_2layer"></a>
 I drew and cut this. Not photographed yet
