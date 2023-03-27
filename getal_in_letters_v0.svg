@@ -1,0 +1,248 @@
+<!-- sample rectangle -->
+<svg width="700" height="1000" xmlns="http://www.w3.org/2000/svg"
+viewBox="-1 -1 64 56">
+
+  <g dominant-baseline="middle">
+    <g font-size="1px" text-anchor="middle" transform="translate(15.5,1.5)">
+      <text y="1">1</text>
+      <text y="2">2</text>
+      <text y="3">3</text>
+      <text y="4">4</text>
+      <text y="5">5</text>
+      <text y="6">6</text>
+      <text y="7">7</text>
+      <text y="8">8</text>
+      <text y="9">9</text>
+      <g transform="translate(1,0)">
+        <text y="0">0</text>
+        <text y="1">1</text>
+        <text y="2">2</text>
+        <text y="3">3</text>
+        <text y="4">4</text>
+        <text y="5">5</text>
+        <text y="6">6</text>
+        <text y="7">7</text>
+        <text y="8">8</text>
+        <text y="9">9</text>
+      </g>
+    </g>
+    <g transform="translate(21,0)" font-size="0.5px">
+      <g text-anchor="end" transform="translate(0,1.25)">
+        <text y="1">elf</text>
+        <text y="2">twaalf</text>
+        <text y="3">der</text>
+        <text y="4">veer</text>
+        <g transform="translate(0,0.5)">
+          <text y="1">een</text>
+          <text y="2">twee</text>
+          <text y="3">drie</text>
+          <text y="4">vier</text>
+          <text y="5">vijf</text>
+          <text y="6">zes</text>
+          <text y="7">zeven</text>
+          <text y="8">acht</text>
+          <text y="9">negen</text>
+        </g>
+      </g>
+      <g text-anchor="start" transform="translate(0,1.75)">
+        <text y="0.5">tien</text>
+        <text y="1"  >&#160;&#160;&#160;&#160;tien</text>
+        <text y="2"  >entwintig</text>
+        <text y="3"  >endertig</text>
+        <text y="4"  >enveertig</text>
+        <text y="5"  >envijftig</text>
+        <text y="6"  >enzestig</text>
+        <text y="7"  >enzeventig</text>
+        <text y="8"  >entachtig</text>
+        <text y="9"  >ennegentig</text>
+      </g>
+    </g>
+  </g>
+
+
+  <g transform="translate(18.5,1.5)">
+    <g transform="translate(0,-0.1)">
+      <circle r=".3" cy= "1"/>
+      <circle r=".3" cy= "2"/>
+      <circle r=".3" cy= "3"/>
+      <circle r=".3" cy= "4"/>
+      <circle r=".3" cy= "5"/>
+    </g>
+    <g transform="translate(0,0.1)">
+      <circle r=".3" cy= "6"/>
+      <circle r=".3" cy= "7"/>
+      <circle r=".3" cy= "8"/>
+      <circle r=".3" cy= "9"/>
+    </g>
+  </g>
+
+
+  <g transform="translate(3.5,1.5)">
+    <g transform="translate(0,-0.1)">
+      <g transform="translate(-0.1,0)">
+        <circle r=".3" cx= "1" cy="1"/>
+        <circle r=".3" cx= "1" cy="2"/>
+        <circle r=".3" cx= "1" cy="3"/>
+        <circle r=".3" cx= "1" cy="4"/>
+        <circle r=".3" cx= "1" cy="5"/>
+        <circle r=".3" cx= "2" cy="1"/>
+        <circle r=".3" cx= "2" cy="2"/>
+        <circle r=".3" cx= "2" cy="3"/>
+        <circle r=".3" cx= "2" cy="4"/>
+        <circle r=".3" cx= "2" cy="5"/>
+        <circle r=".3" cx= "3" cy="1"/>
+        <circle r=".3" cx= "3" cy="2"/>
+        <circle r=".3" cx= "3" cy="3"/>
+        <circle r=".3" cx= "3" cy="4"/>
+        <circle r=".3" cx= "3" cy="5"/>
+        <circle r=".3" cx= "4" cy="1"/>
+        <circle r=".3" cx= "4" cy="2"/>
+        <circle r=".3" cx= "4" cy="3"/>
+        <circle r=".3" cx= "4" cy="4"/>
+        <circle r=".3" cx= "4" cy="5"/>
+        <circle r=".3" cx= "5" cy="1"/>
+        <circle r=".3" cx= "5" cy="2"/>
+        <circle r=".3" cx= "5" cy="3"/>
+        <circle r=".3" cx= "5" cy="4"/>
+        <circle r=".3" cx= "5" cy="5"/>
+      </g>
+      <g transform="translate(0.1,0)">
+        <circle r=".3" cx= "6" cy="1"/>
+        <circle r=".3" cx= "6" cy="2"/>
+        <circle r=".3" cx= "6" cy="3"/>
+        <circle r=".3" cx= "6" cy="4"/>
+        <circle r=".3" cx= "6" cy="5"/>
+        <circle r=".3" cx= "7" cy="1"/>
+        <circle r=".3" cx= "7" cy="2"/>
+        <circle r=".3" cx= "7" cy="3"/>
+        <circle r=".3" cx= "7" cy="4"/>
+        <circle r=".3" cx= "7" cy="5"/>
+        <circle r=".3" cx= "8" cy="1"/>
+        <circle r=".3" cx= "8" cy="2"/>
+        <circle r=".3" cx= "8" cy="3"/>
+        <circle r=".3" cx= "8" cy="4"/>
+        <circle r=".3" cx= "8" cy="5"/>
+        <circle r=".3" cx= "9" cy="1"/>
+        <circle r=".3" cx= "9" cy="2"/>
+        <circle r=".3" cx= "9" cy="3"/>
+        <circle r=".3" cx= "9" cy="4"/>
+        <circle r=".3" cx= "9" cy="5"/>
+        <circle r=".3" cx="10" cy="1"/>
+        <circle r=".3" cx="10" cy="2"/>
+        <circle r=".3" cx="10" cy="3"/>
+        <circle r=".3" cx="10" cy="4"/>
+        <circle r=".3" cx="10" cy="5"/>
+      </g>
+    </g>
+    <g transform="translate(0,0.1)">
+      <g transform="translate(-0.1,0)">
+        <circle r=".3" cx= "1" cy="6"/>
+        <circle r=".3" cx= "1" cy="7"/>
+        <circle r=".3" cx= "1" cy="8"/>
+        <circle r=".3" cx= "1" cy="9"/>
+        <circle r=".3" cx= "2" cy="6"/>
+        <circle r=".3" cx= "2" cy="7"/>
+        <circle r=".3" cx= "2" cy="8"/>
+        <circle r=".3" cx= "2" cy="9"/>
+        <circle r=".3" cx= "3" cy="6"/>
+        <circle r=".3" cx= "3" cy="7"/>
+        <circle r=".3" cx= "3" cy="8"/>
+        <circle r=".3" cx= "3" cy="9"/>
+        <circle r=".3" cx= "4" cy="6"/>
+        <circle r=".3" cx= "4" cy="7"/>
+        <circle r=".3" cx= "4" cy="8"/>
+        <circle r=".3" cx= "4" cy="9"/>
+        <circle r=".3" cx= "5" cy="6"/>
+        <circle r=".3" cx= "5" cy="7"/>
+        <circle r=".3" cx= "5" cy="8"/>
+        <circle r=".3" cx= "5" cy="9"/>
+      </g>
+      <g transform="translate(0.1,0)">
+        <circle r=".3" cx= "6" cy="6"/>
+        <circle r=".3" cx= "6" cy="7"/>
+        <circle r=".3" cx= "6" cy="8"/>
+        <circle r=".3" cx= "6" cy="9"/>
+        <circle r=".3" cx= "7" cy="6"/>
+        <circle r=".3" cx= "7" cy="7"/>
+        <circle r=".3" cx= "7" cy="8"/>
+        <circle r=".3" cx= "7" cy="9"/>
+        <circle r=".3" cx= "8" cy="6"/>
+        <circle r=".3" cx= "8" cy="7"/>
+        <circle r=".3" cx= "8" cy="8"/>
+        <circle r=".3" cx= "8" cy="9"/>
+        <circle r=".3" cx= "9" cy="6"/>
+        <circle r=".3" cx= "9" cy="7"/>
+        <circle r=".3" cx= "9" cy="8"/>
+        <circle r=".3" cx= "9" cy="9"/>
+        <circle r=".3" cx="10" cy="6"/>
+        <circle r=".3" cx="10" cy="7"/>
+        <circle r=".3" cx="10" cy="8"/>
+        <circle r=".3" cx="10" cy="9"/>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(29,37)" stroke-width="0.1" stroke-dasharray=".5,.5" stroke="black" fill="none">
+    <path d="m0,15 h2 l-2,2 m2,0 v-17 m0,2 l-2,-2 m0,2 h33 m-2,0 l2,-2 m-2,0 v17 m0,-2 l2,2 m0,-2 h-2"/>
+  </g>
+
+  <!-- page 2 starts -->
+  <g fill="none" stroke-width="0.1" stroke="red">
+
+    <g>
+      <path d="m 2,11 h1 v1 h-1 v-10 h1 v9" />
+      <path d="m26,11 h1 v1 h-1 v-10 h1 v9" />
+    </g>
+
+    <g transform="translate(29,0)">
+      <path d="m 2,11 h1 v1  h-1 v-10 h1 v9" />
+      <path d="m26,11 h1 v1  h-1 v-10 h1 v9" />
+      <path d="m16, 1 h5 v10 h-5 v-10" />
+    </g>
+
+    <g transform="translate(0,13)">
+      <path d="m 3,12   h-1 m0,1 h1 v0.5 h-1 v-2 h1 v1.5" />
+      <path d="m 3,21   h-1 m0,1 h1 v0.5 h-1 v-2 h1 v1.5" />
+      <path d="m27,12   h-1 m0,1 h1 v0.5 h-1 v-2 h1 v1.5" />
+      <path d="m27,21   h-1 m0,1 h1 v0.5 h-1 v-2 h1 v1.5" />
+      <path d="m12,12.5 h2 v2 h-2 v-2" />
+      <path d="m15,12.5 h10 v10 h-10 v-10" />
+      <path d="m 4,13   h6 v-0.5 h1 v10 h-1 v-8 h-3 v-0.5 h-3 v-1" />
+    </g>
+
+    <g transform="translate(29,24)">
+      <path d="m15,10 h 2 v1 h -2 v-1" />
+      <path d="m18, 2 h 1 v8 h  6 v 1 h-7 v-9" />
+      <path d="m 4, 2 h10 v9 h-10 v-9" />
+    </g>
+
+    <g transform="translate(0,36.5)">
+      <path d="m 2,11   h 1 v1   h-1 v-10 h1 v9" />
+      <path d="m26,11   h 1 v1   h-1 v-10 h1 v9" />
+      <path d="m22, 1.5 h 3 v0.5 h-3 v-0.5" />
+      <path d="m 4, 1   h14 v1   h 3 v 0.5 h4 v0.5 h-4 v0.5 h4 v7.5 h-21 v-10" />
+    </g>
+
+    <g transform="translate(29,37)">
+      <path d="m2,15 h29 v1 h-29 v-1" />
+    </g>
+
+    <!-- page3 -->
+    <g>
+      <path d="m16.5,24 h2" />
+      <path d="m29 , 13 h1" />
+      <path d="m 6 , 13 h2" />
+      <path d="m43.5,24 h2" />
+
+      <path d="m57,0 v13" />
+      <path d="m8,13 h8.5 v11 h-8.5 v-11" />
+      <path d="m30,0 v13 h13.5 v11 h-25 v-11 h11 v-13" />
+
+      <path d="m0,0 h58 v13 h-12.5 v11 h12.5 v13 h4 v17 h-33 v-4.5 h-29 v-25.5 h6 v-11 h-6 v-13" />
+
+      <path d="m29,49.5 v-12.5 h29" />
+      <path d="m29,37 v-0.5 h-29" />
+      <path d="m29,36.5 v-12.5" />
+    </g>
+  </g>
+</svg>
