@@ -4,15 +4,17 @@ viewBox="-1 -1 64 56">
 
   <g dominant-baseline="middle">
     <g font-size="1px" text-anchor="middle" transform="translate(15.5,1.5)">
-      <text y="1">1</text>
-      <text y="2">2</text>
-      <text y="3">3</text>
-      <text y="4">4</text>
-      <text y="5">5</text>
-      <text y="6">6</text>
-      <text y="7">7</text>
-      <text y="8">8</text>
-      <text y="9">9</text>
+      <g transform="translate(29,0)">
+        <text y="1">1</text>
+        <text y="2">2</text>
+        <text y="3">3</text>
+        <text y="4">4</text>
+        <text y="5">5</text>
+        <text y="6">6</text>
+        <text y="7">7</text>
+        <text y="8">8</text>
+        <text y="9">9</text>
+      </g>
       <g transform="translate(1,0)">
         <text y="0">0</text>
         <text y="1">1</text>
@@ -44,7 +46,7 @@ viewBox="-1 -1 64 56">
           <text y="9">negen</text>
         </g>
       </g>
-      <g text-anchor="start" transform="translate(0,1.75)">
+      <g text-anchor="start" transform="translate(29,0)translate(0,1.75)">
         <text y="0.5">tien</text>
         <text y="1"  >&#160;&#160;&#160;&#160;tien</text>
         <text y="2"  >entwintig</text>
@@ -77,7 +79,7 @@ viewBox="-1 -1 64 56">
   </g>
 
 
-  <g transform="translate(3.5,1.5)">
+  <g transform="translate(29,0)translate(3.5,1.5)">
     <g transform="translate(0,-0.1)">
       <g transform="translate(-0.1,0)">
         <circle r=".3" cx= "1" cy="1"/>
