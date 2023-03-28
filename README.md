@@ -17,7 +17,7 @@ improved, but not put together
 
 
 #### 1b: Add and substract (being 2 directions of the same thing):
-![add and substract](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200422_030946666.jpg)
+![add and substract](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20230328_233125596.jpg)
 
 #### 1c1: multiplication<a name="multiplication"></a>
 background:
