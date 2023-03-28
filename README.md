@@ -16,7 +16,7 @@ Which together with the notion of needing physical constraints for how layers ca
 ### Add and substract, shown as 2 directions along the same scale:
 The first reasonable paper prototype: ![add and substract](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20230328_233125596.jpg)
 
-The [in-progress digital design](.svg) which sneaks in the concept of negative numbers.
+The [in-progress digital design](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/AddSubtract.svg) which sneaks in the concept of negative numbers.
 
 ### Multiplication<a name="multiplication"></a>
 The first reasonable paper prototype: ![paper](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_203637563.jpg)
