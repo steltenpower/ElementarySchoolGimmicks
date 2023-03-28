@@ -1,12 +1,7 @@
 # Elementary School Gimmicks
-When I noticed a young kid able to do simple calculations with things, depictions and spoken numbers significantly better than with amounts written in digits, I wondered if learning could be helped by making the abstractions that digits are, explicit WITHIN doing calculations. This resulated in 3 'machines':
+When I noticed a young kid able to do simple calculations with things, depictions and spoken numbers significantly better than with amounts written in digits, I wondered if learning could be helped by making the abstractions that digits are, explicit WITHIN doing calculations. This resulated in designs for 3 'machines', where every number is always also represented in an amount of depictions:
 
-<a title="play !" href="https://steltenpower.github.io/ElementarySchoolGimmicks/sliding_calculators_multiplication.html">
-<img src="https://repository-images.githubusercontent.com/217832815/2aec6500-1022-11eb-952a-1796fdb14235"></a>
-## 1: Calculators to maybe help learn the abstraction of amounts coded in digits; by seeing those change at the same time.
-
-(photos of paper prototypes. Annoyingly rotated sometimes)
-
+- Numbers expressed in the alfabet (in Dutch):
 
 #### 1a: How numbers are constructed from digits and how to pronounce them in Dutch
 
@@ -28,6 +23,10 @@ horizontal sliding mask:
 ![x-mask](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/horizontal_sliding_mask.jpg)
 vertical sliding mask:
 ![y-mask](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/vertical_sliding_mask.jpg)
+
+<a title="play !" href="https://steltenpower.github.io/ElementarySchoolGimmicks/sliding_calculators_multiplication.html">
+<img src="https://repository-images.githubusercontent.com/217832815/2aec6500-1022-11eb-952a-1796fdb14235"></a>
+
 
 Some calculation examples:
 
