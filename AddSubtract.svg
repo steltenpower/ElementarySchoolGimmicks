@@ -1,0 +1,67 @@
+<!-- sample rectangle -->
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 20 20">
+  <g font-size="1px" transform="translate(-5,-5)" dominant-baseline="middle" text-anchor="end">
+    <text x="-2" y="-1">x</text>
+    <text x="1" y="-1">-1</text>
+    <text x="1">0</text>
+    <text x="1" y="1">1</text>
+    <text x="1" y="2">2</text>
+    <text x="1" y="3">3</text>
+    <text x="1" y="4">4</text>
+    <text x="1" y="5">5</text>
+    <text x="1" y="6">6</text>
+    <text x="1" y="7">7</text>
+    <text x="1" y="8">8</text>
+    <text x="1" y="9">9</text>
+    <text x="1" y="10">10</text>
+    <text x="1" y="11">11</text>
+    <text x="1" y="12">12</text>
+  <circle r="0.3" cx="-1" cy="1"/>
+  <circle r="0.3" cx="-1" cy="2"/>
+  <circle r="0.3" cx="-1" cy="3"/>
+  </g>
+
+
+  <g font-size="1px" transform="translate(5,-5)" dominant-baseline="middle" text-anchor="end">
+    <text x="-2" y="-4">x</text>
+    <text x="-2" y="-3">x</text>
+    <text x="-2" y="-2">x</text>
+    <text x="-2" y="-1">x</text>
+    <text x="1"y="-4">-4</text>
+    <text x="1"y="-3">-3</text>
+    <text x="1"y="-2">-2</text>
+    <text x="1"y="-1">-1</text>
+    <text x="1">0</text>
+    <text x="1" y="1">1</text>
+    <text x="1" y="2">2</text>
+    <text x="1" y="3">3</text>
+    <text x="1" y="4">4</text>
+    <text x="1" y="5">5</text>
+    <text x="1" y="6">6</text>
+    <text x="1" y="7">7</text>
+    <text x="1" y="8">8</text>
+    <text x="1" y="9">9</text>
+    <text x="1" y="10">10</text>
+    <text x="1" y="11">11</text>
+    <text x="1" y="12">12</text>
+    <text x="1" y="13">13</text>
+    <text x="1" y="14">14</text>
+  <circle r="0.3" cx="-1" cy="1"/>
+  <circle r="0.3" cx="-1" cy="2"/>
+  <circle r="0.3" cx="-1" cy="3"/>
+  <circle r="0.3" cx="-1" cy="4"/>
+  <circle r="0.3" cx="-1" cy="5"/>
+  <circle r="0.3" cx="-1" cy="6"/>
+  <circle r="0.3" cx="-1" cy="7"/>
+  <circle r="0.3" cx="-1" cy="8"/>
+  <circle r="0.3" cx="-1" cy="9"/>
+  <circle r="0.3" cx="-1" cy="10"/>
+  <circle r="0.3" cx="-1" cy="11"/>
+  <circle r="0.3" cx="-1" cy="12"/>
+  <circle r="0.3" cx="-1" cy="13"/>
+  <circle r="0.3" cx="-1" cy="14"/>
+  </g>
+
+<path d="M-9,-10 v20" stroke="red" stroke-width="0.1"/>
+
+</svg>
