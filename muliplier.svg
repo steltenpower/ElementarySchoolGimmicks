@@ -1,20 +1,24 @@
 <!-- sample rectangle -->
 <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg"
-viewBox="-5.5 -3.5 34 34">
+viewBox="-3.5 -6.5 35 35">
 
   <g dominant-baseline="middle" font-size="0.8px" text-anchor="end" transform="translate(0.5,0)">
     <g transform="translate(-1,-0.5)" fill="none" stroke-width="0.1">
-      <path d="m0,24 v-12 h14 v14 h-12 v-1 h11 v-1 h-13 m25,-12 v-12 h1 v12 h-1" stroke="green" />
-      <path d="m2,26 h12 v-14 h-14 v12 h1 v-11 h1 v13 M14,1 h12 v-1 h-12 v1" stroke="blue" />
-      <path d="m-3,-3 h32 v32 h-32 v-32" stroke="red" />
-      <path d="M-3,-3 h32 v32 h-32 v-15 h-2 v-2 h2 v-15" stroke="green" />
-      <path d="M-3,-3 h32 v32 h-15 v2 h-2 v-2 h-15 v-32" stroke="blue" />
-      <path d="M-1,-2 v1 h-1 v-1 h12 v1 h-11" stroke="green" />
-      <path d="M-1,27 v1 h-1 v-1 h12 v1 h-11" stroke="green" />
-      <path d="M-2,27 h1 v1 h-1 v-12 h1 v11" stroke="blue" />
-      <path d="M27,27 h1 v1 h-1 v-12 h1 v11" stroke="blue" />
+      <path d="m0,24 v-13 h15 v15 h-12 v-1 h11 v-1 h-14 m30,-16 v-13 h1 v13 h-1" stroke="green" />
+      <path d="m2,26 h13 v-15 h-15 v12 h1 v-11 h1 v14 M18,-4 h13 v-1 h-13 v1" stroke="blue" />
+
+      <path d="M17,9 v1 h-1 v-1 h13 v1 h-12" stroke="green" />
+      <path d="M2,9 v1 h-1 v-1 h13 v1 h-12" stroke="green" />
+      <path d="M1,10 v-13 h13 v13 h-13" stroke="blue" />
+      <path d="M16,25 v-13 h13 v13 h-13" stroke="green" />
+      <path d="M16,24 h1 v1 h-1 v-13 h1 v12" stroke="blue" />
+      <path d="M16,9 h1 v1 h-1 v-13 h1 v12" stroke="blue" />
+
+      <path d="m-1,-6 h33 v33 h-33 v-33" stroke="red" />
+      <path d="M-1,-6 h33 v33 h-33 v-16 h-2 v-3 h2 v-14" stroke="green" />
+      <path d="M-1,-6 h33 v33 h-14 v2 h-3 v-2 h-16 v-33" stroke="blue" />
     </g>
-    <g transform="translate(0.9,12)">
+    <g transform="translate(0.9,11)">
       <text y= "0">12</text>
       <text y= "1">11</text>
       <text y= "2">10</text>
@@ -27,8 +31,10 @@ viewBox="-5.5 -3.5 34 34">
       <text y= "9">3</text>
       <text y="10">2</text>
       <text y="11">1</text>
+      <text y="12">0</text>
     </g>
-    <g transform="translate(1.85,24)">
+    <g transform="translate(2.85,24)">
+      <text x= "-1">0</text>
       <text x= "0">1</text>
       <text x= "1">2</text>
       <text x= "2">3</text>
@@ -43,8 +49,24 @@ viewBox="-5.5 -3.5 34 34">
       <text x="11">12</text>
     </g>
 
-    <g font-size="0.5" transform="translate(0.1,0)">
-      <g transform="translate(13.75,11)">
+    <g font-size="0.5" transform="translate(2.1,-2)">
+      <g transform="translate(16.75,9)">
+        <text x= "-1">0</text>
+        <text x= "0">0</text>
+        <text x= "1">0</text>
+        <text x= "2">0</text>
+        <text x= "3">0</text>
+        <text x= "4">0</text>
+        <text x= "5">0</text>
+        <text x= "6">0</text>
+        <text x= "7">0</text>
+        <text x= "8">0</text>
+        <text x= "9">0</text>
+        <text x="10">0</text>
+        <text x="11">0</text>
+      </g>
+      <g transform="translate(16.75,8)">
+        <text x= "-1">0</text>
         <text x= "0">1</text>
         <text x= "1">2</text>
         <text x= "2">3</text>
@@ -58,7 +80,8 @@ viewBox="-5.5 -3.5 34 34">
         <text x="10">11</text>
         <text x="11">12</text>
       </g>
-      <g transform="translate(13.75,10)">
+      <g transform="translate(16.75,7)">
+        <text x= "-1">0</text>
         <text x= "0">2</text>
         <text x= "1">4</text>
         <text x= "2">6</text>
@@ -72,7 +95,8 @@ viewBox="-5.5 -3.5 34 34">
         <text x="10">22</text>
         <text x="11">24</text>
       </g>
-      <g transform="translate(13.75,9)">
+      <g transform="translate(16.75,6)">
+        <text x= "-1">0</text>
         <text x= "0">3</text>
         <text x= "1">6</text>
         <text x= "2">9</text>
@@ -86,7 +110,8 @@ viewBox="-5.5 -3.5 34 34">
         <text x="10">33</text>
         <text x="11">36</text>
       </g>
-      <g transform="translate(13.75,8)">
+      <g transform="translate(16.75,5)">
+        <text x= "-1">0</text>
         <text x= "0">4</text>
         <text x= "1">8</text>
         <text x= "2">12</text>
@@ -100,7 +125,8 @@ viewBox="-5.5 -3.5 34 34">
         <text x="10">44</text>
         <text x="11">48</text>
       </g>
-      <g transform="translate(13.75,7)">
+      <g transform="translate(16.75,4)">
+        <text x= "-1">0</text>
         <text x= "0">5</text>
         <text x= "1">10</text>
         <text x= "2">15</text>
@@ -114,7 +140,8 @@ viewBox="-5.5 -3.5 34 34">
         <text x="10">55</text>
         <text x="11">60</text>
       </g>
-      <g transform="translate(13.75,6)">
+      <g transform="translate(16.75,3)">
+        <text x= "-1">0</text>
         <text x= "0">6</text>
         <text x= "1">12</text>
         <text x= "2">18</text>
@@ -128,7 +155,8 @@ viewBox="-5.5 -3.5 34 34">
         <text x="10">66</text>
         <text x="11">72</text>
       </g>
-      <g transform="translate(13.75,5)">
+      <g transform="translate(16.75,2)">
+        <text x= "-1">0</text>
         <text x= "0">7</text>
         <text x= "1">14</text>
         <text x= "2">21</text>
@@ -142,7 +170,8 @@ viewBox="-5.5 -3.5 34 34">
         <text x="10">77</text>
         <text x="11">84</text>
       </g>
-      <g transform="translate(13.75,4)">
+      <g transform="translate(16.75,1)">
+        <text x= "-1">0</text>
         <text x= "0">8</text>
         <text x= "1">16</text>
         <text x= "2">24</text>
@@ -156,7 +185,8 @@ viewBox="-5.5 -3.5 34 34">
         <text x="10">88</text>
         <text x="11">96</text>
       </g>
-      <g transform="translate(13.75,3)">
+      <g transform="translate(16.75,0)">
+        <text x= "-1">0</text>
         <text x= "0">9</text>
         <text x= "1">18</text>
         <text x= "2">27</text>
@@ -170,7 +200,8 @@ viewBox="-5.5 -3.5 34 34">
         <text x="10">99</text>
         <text x="11">108</text>
       </g>
-      <g transform="translate(13.75,2)">
+      <g transform="translate(16.75,-1)">
+        <text x= "-1">0</text>
         <text x= "0">10</text>
         <text x= "1">20</text>
         <text x= "2">30</text>
@@ -184,7 +215,8 @@ viewBox="-5.5 -3.5 34 34">
         <text x="10">110</text>
         <text x="11">120</text>
       </g>
-      <g transform="translate(13.75,1)">
+      <g transform="translate(16.75,-2)">
+        <text x= "-1">0</text>
         <text x= "0">11</text>
         <text x= "1">22</text>
         <text x= "2">33</text>
@@ -198,7 +230,8 @@ viewBox="-5.5 -3.5 34 34">
         <text x="10">121</text>
         <text x="11">132</text>
       </g>
-      <g transform="translate(13.75,0)">
+      <g transform="translate(16.75,-3)">
+        <text x= "-1">0</text>
         <text x= "0">12</text>
         <text x= "1">24</text>
         <text x= "2">36</text>
@@ -214,7 +247,7 @@ viewBox="-5.5 -3.5 34 34">
       </g>
     </g>
   </g>
-  <g transform="translate(0,12)">
+  <g transform="translate(0,11)">
     <circle cy= "0" r=".3"/>
     <circle cy= "1" r=".3"/>
     <circle cy= "2" r=".3"/>
@@ -228,7 +261,7 @@ viewBox="-5.5 -3.5 34 34">
     <circle cy="10" r=".3"/>
     <circle cy="11" r=".3"/>
   </g>
-  <g transform="translate(2,12)">
+  <g transform="translate(3,11)">
     <circle cy= "0" r=".3"/>
     <circle cy= "1" r=".3"/>
     <circle cy= "2" r=".3"/>
@@ -242,7 +275,7 @@ viewBox="-5.5 -3.5 34 34">
     <circle cy="10" r=".3"/>
     <circle cy="11" r=".3"/>
   </g>
-  <g transform="translate(3,12)">
+  <g transform="translate(4,11)">
     <circle cy= "0" r=".3"/>
     <circle cy= "1" r=".3"/>
     <circle cy= "2" r=".3"/>
@@ -256,7 +289,7 @@ viewBox="-5.5 -3.5 34 34">
     <circle cy="10" r=".3"/>
     <circle cy="11" r=".3"/>
   </g>
-  <g transform="translate(4,12)">
+  <g transform="translate(5,11)">
     <circle cy= "0" r=".3"/>
     <circle cy= "1" r=".3"/>
     <circle cy= "2" r=".3"/>
@@ -270,7 +303,7 @@ viewBox="-5.5 -3.5 34 34">
     <circle cy="10" r=".3"/>
     <circle cy="11" r=".3"/>
   </g>
-  <g transform="translate(5,12)">
+  <g transform="translate(6,11)">
     <circle cy= "0" r=".3"/>
     <circle cy= "1" r=".3"/>
     <circle cy= "2" r=".3"/>
@@ -284,7 +317,7 @@ viewBox="-5.5 -3.5 34 34">
     <circle cy="10" r=".3"/>
     <circle cy="11" r=".3"/>
   </g>
-  <g transform="translate(6,12)">
+  <g transform="translate(7,11)">
     <circle cy= "0" r=".3"/>
     <circle cy= "1" r=".3"/>
     <circle cy= "2" r=".3"/>
@@ -298,7 +331,7 @@ viewBox="-5.5 -3.5 34 34">
     <circle cy="10" r=".3"/>
     <circle cy="11" r=".3"/>
   </g>
-  <g transform="translate(7,12)">
+  <g transform="translate(8,11)">
     <circle cy= "0" r=".3"/>
     <circle cy= "1" r=".3"/>
     <circle cy= "2" r=".3"/>
@@ -312,7 +345,7 @@ viewBox="-5.5 -3.5 34 34">
     <circle cy="10" r=".3"/>
     <circle cy="11" r=".3"/>
   </g>
-  <g transform="translate(8,12)">
+  <g transform="translate(9,11)">
     <circle cy= "0" r=".3"/>
     <circle cy= "1" r=".3"/>
     <circle cy= "2" r=".3"/>
@@ -326,7 +359,7 @@ viewBox="-5.5 -3.5 34 34">
     <circle cy="10" r=".3"/>
     <circle cy="11" r=".3"/>
   </g>
-  <g transform="translate(9,12)">
+  <g transform="translate(10,11)">
     <circle cy= "0" r=".3"/>
     <circle cy= "1" r=".3"/>
     <circle cy= "2" r=".3"/>
@@ -340,7 +373,7 @@ viewBox="-5.5 -3.5 34 34">
     <circle cy="10" r=".3"/>
     <circle cy="11" r=".3"/>
   </g>
-  <g transform="translate(10,12)">
+  <g transform="translate(11,11)">
     <circle cy= "0" r=".3"/>
     <circle cy= "1" r=".3"/>
     <circle cy= "2" r=".3"/>
@@ -354,7 +387,7 @@ viewBox="-5.5 -3.5 34 34">
     <circle cy="10" r=".3"/>
     <circle cy="11" r=".3"/>
   </g>
-  <g transform="translate(11,12)">
+  <g transform="translate(12,11)">
     <circle cy= "0" r=".3"/>
     <circle cy= "1" r=".3"/>
     <circle cy= "2" r=".3"/>
@@ -368,7 +401,7 @@ viewBox="-5.5 -3.5 34 34">
     <circle cy="10" r=".3"/>
     <circle cy="11" r=".3"/>
   </g>
-  <g transform="translate(12,12)">
+  <g transform="translate(13,11)">
     <circle cy= "0" r=".3"/>
     <circle cy= "1" r=".3"/>
     <circle cy= "2" r=".3"/>
@@ -382,7 +415,7 @@ viewBox="-5.5 -3.5 34 34">
     <circle cy="10" r=".3"/>
     <circle cy="11" r=".3"/>
   </g>
-  <g transform="translate(13,12)">
+  <g transform="translate(14,11)">
     <circle cy= "0" r=".3"/>
     <circle cy= "1" r=".3"/>
     <circle cy= "2" r=".3"/>
@@ -396,7 +429,7 @@ viewBox="-5.5 -3.5 34 34">
     <circle cy="10" r=".3"/>
     <circle cy="11" r=".3"/>
   </g>
-  <g transform="translate(2,25)">
+  <g transform="translate(3,25)">
     <circle cx= "0" r=".3"/>
     <circle cx= "1" r=".3"/>
     <circle cx= "2" r=".3"/>
