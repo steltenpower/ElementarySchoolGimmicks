@@ -4,19 +4,18 @@ viewBox="-36.5 -6.5 101 35">
 
   <g dominant-baseline="middle" font-size="0.8px" text-anchor="end" transform="translate(0.5,0)">
     <g transform="translate(-1,-0.5)" fill="none" stroke-width="0.1">
-      <path d="m-33,24 v-13 h15 v15 h-12 v-1 h11 v-1 h-14 m30,-16 v-13 h1 v13 h-1" stroke="green" />
-      <path d="m35,26 h13 v-15 h-15 v12 h1 v-11 h1 v14 m16,-30 h13 v-1 h-13 v1" stroke="blue" />
+      <path d="m-33,24 v-13 h15 v15 h-12 v-1 h11 v-1 h-14 m30,-16 v-13 h1 v13 h-1" stroke="red" />
+      <path d="m35,26 h13 v-15 h-15 v12 h1 v-11 h1 v14 m16,-30 h13 v-1 h-13 v1" stroke="red" />
 
-      <path d="M-16,9 v1 h-1 v-1 h13 v1 h-12" stroke="green" />
-      <path d="M-31,9 v1 h-1 v-1 h13 v1 h-12" stroke="green" />
-      <path d="M34,10 v-13 h13 v13 h-13" stroke="blue" />
-      <path d="M-17,25 v-13 h13 v13 h-13" stroke="green" />
-      <path d="M49,24 h1 v1 h-1 v-13 h1 v12" stroke="blue" />
-      <path d="M49,9 h1 v1 h-1 v-13 h1 v12" stroke="blue" />
+      <path d="M-16,9 v1 h-1 v-1 h13 v1 h-12" stroke="red" />
+      <path d="M-31,9 v1 h-1 v-1 h13 v1 h-12" stroke="red" />
+      <path d="M34,10 v-13 h13 v13 h-13" stroke="red" />
+      <path d="M-17,25 v-13 h13 v13 h-13" stroke="red" />
+      <path d="M49,24 h1 v1 h-1 v-13 h1 v12" stroke="red" />
+      <path d="M49,9 h1 v1 h-1 v-13 h1 v12" stroke="red" />
 
-      <path d="m-1,-6 h33 v33 h-33 v-33" stroke="red" />
-      <path d="M-34,-6 h33 v33 h-33 v-16 h-2 v-3 h2 v-14" stroke="green" />
-      <path d="M32,-6 h33 v33 h-14 v2 h-3 v-2 h-16 v-33" stroke="blue" />
+      <path d="M-34,-6 h99 v33 h-14 v2 h-3 v-2 h-82 v-16 h-2 v-3 h2 v-14" stroke="red" />
+      <path d="M-1,-6 v33 m33,-33 v33" stroke="red" />
     </g>
     <g transform="translate(0.9,11)">
       <text y= "0">12</text>
