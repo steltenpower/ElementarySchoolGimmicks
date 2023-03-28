@@ -1,16 +1,18 @@
 <!-- sample rectangle -->
 <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg"
-viewBox="-3.5 -3.5 32 32">
+viewBox="-5.5 -3.5 34 34">
 
   <g dominant-baseline="middle" font-size="0.8px" text-anchor="end" transform="translate(0.5,0)">
     <g transform="translate(-1,-0.5)" fill="none" stroke-width="0.1">
-      <path d="m0,24 v-12 h14 v14 h-12 v-1 h11 v-1 h-13 m25,-12 v-12 h1 v12 h-1" stroke="red"/>
-      <path d="m2,26 h12 v-14 h-14 v12 h1 v-11 h1 v13 M14,1 h12 v-1 h-12 v1" stroke="green"/>
-      <path d="m-3,-3 h32 v32 h-32 v-32" stroke="blue"/>
-      <path d="M-2,27 h1 v1 h-1 v-12 h1 v11" stroke="green"/>
-      <path d="M27,27 h1 v1 h-1 v-12 h1 v11" stroke="green"/>
-      <path d="M-1,-2 v1 h-1 v-1 h12 v1 h-11" stroke="red"/>
-      <path d="M-1,27 v1 h-1 v-1 h12 v1 h-11" stroke="red"/>
+      <path d="m0,24 v-12 h14 v14 h-12 v-1 h11 v-1 h-13 m25,-12 v-12 h1 v12 h-1" stroke="green" />
+      <path d="m2,26 h12 v-14 h-14 v12 h1 v-11 h1 v13 M14,1 h12 v-1 h-12 v1" stroke="blue" />
+      <path d="m-3,-3 h32 v32 h-32 v-32" stroke="red" />
+      <path d="M-3,-3 h32 v32 h-32 v-15 h-2 v-2 h2 v-15" stroke="green" />
+      <path d="M-3,-3 h32 v32 h-15 v2 h-2 v-2 h-15 v-32" stroke="blue" />
+      <path d="M-1,-2 v1 h-1 v-1 h12 v1 h-11" stroke="green" />
+      <path d="M-1,27 v1 h-1 v-1 h12 v1 h-11" stroke="green" />
+      <path d="M-2,27 h1 v1 h-1 v-12 h1 v11" stroke="blue" />
+      <path d="M27,27 h1 v1 h-1 v-12 h1 v11" stroke="blue" />
     </g>
     <g transform="translate(0.9,12)">
       <text y= "0">12</text>
