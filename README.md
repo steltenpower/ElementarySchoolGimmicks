@@ -38,7 +38,7 @@ A variation on https://upload.wikimedia.org/wikipedia/commons/3/3f/Multiplicatio
 
 ### Numbered kid juwelry
 - Rings/bracelets that show digits (similar to what's on combination lock). With a viewing window to read the number from and to keep 2 rings together. Highlight zeroes as those trigger 'carry over'.
-- Necklace with beads that each have a number, starting with zero and from there add one every time
+- Necklace with beads that each have a number, starting with zero and from there add one every time (somebody must have made this, though the closest I got to finding it was this [alphabet necklace](https://rhythmsofplay.com/alphabet-bead-necklace-craft-for-kids/)
 
 ### Font of characters kids learn writing, so I can type a text that kid can practice to write
 
