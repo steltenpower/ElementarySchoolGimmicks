@@ -43,6 +43,8 @@ A variation on https://upload.wikimedia.org/wikipedia/commons/3/3f/Multiplicatio
 ### Font of characters kids learn writing, so I can type a text that kid can practice to write
 
 ### Pattern Recognition that does ping or BUZZ based on handwritten or spoken numbers
+
+
 notes:
 - https://www.sitepoint.com/masking-in-the-browser-with-css-and-svg/
 - https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-rule#Example_2
