@@ -14,7 +14,7 @@ But number naming is a little bit more complex than that. To figure that out:
 Which together with the notion of needing physical constraints for how layers can be moved relative to each other, resulted in the [full digital design](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/getal_in_letters_v0.svg) (though the on/off of the trema, so "e" or "ë" is not taken into account yet). Of course we need a english version as well, where "for-teen" and "twenty-four" show there's irregularity in the order of things in that language too.
 
 ### Add and substract, shown as 2 directions along the same scale:
-The first reasonable paper prototype: ![add and substract](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20230328_233125596.jpg)
+The first reasonable paper prototype: <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20230328_233125596.jpg" style="transform:rotate(180deg)">
 
 The [in-progress digital design](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/AddSubtract.svg) which sneaks in the concept of negative numbers.
 
