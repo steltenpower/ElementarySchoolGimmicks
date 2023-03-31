@@ -1,7 +1,7 @@
 # Elementary School Gimmicks
 
 ## Number sliders
-When I noticed a young kid able to do simple calculations with things, depictions and spoken numbers significantly better than with amounts written in digits, I wondered if learning could be helped by making the abstractions that digits are, explicit WITHIN doing calculations. This resulated in designs for 3 'machines', where every number is always also represented in an amount of depictions:
+When I noticed a young kid able to do simple calculations with things, depictions and spoken numbers significantly better than with amounts written in digits, I wondered if learning could be helped by making the abstractions that digits are, explicit WITHIN doing calculations. This resulted in designs for 3 'machines', where every number is always also represented in an amount of depictions:
 
 ### Numbers expressed in the alfabet (in Dutch):
 <table><tr><td>
@@ -11,7 +11,14 @@ First reasonable paper prototype: shifting 'tens' and 'ones'.<br>
 But number naming is a little bit more complex than that. To figure that out:<br>
 <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/getallenuitspreker.jpg"></td></tr><tr><td colspan="3">
 Which together with the notion of needing physical constraints for how layers can be moved relative to each other, resulted in the current digital design:<br><img src="https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/getal_in_letters_v0.svg"><br>
-  The on/off of the trema, so "e" or "ë", is not taken into account yet.</td></tr><tr><td colspan="3"> Of course we need a english version as well, where "for-teen" and "twenty-four" show there's irregularity in the order of things in that language too.
+  The on/off of the trema, so "e" or "ë", is not taken into account yet.
+  TODO:<br>
+  introduce empty colums/rows for sturdiness<br>
+  add font-type<br>
+  set size in physical parameters<br>
+  add a reference square of 1cm x 1cm<br>
+  add z=0 and up for the different layers
+</td></tr><tr><td colspan="3"> Of course we need a english version as well, where "for-teen" and "twenty-four" show there's irregularity in the order of things in that language too.
   </td></tr></table>
 
 ### Add and substract, shown as 2 directions along the same scale:
