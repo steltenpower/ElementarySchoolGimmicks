@@ -19,13 +19,16 @@ The first reasonable paper prototype: <img src="https://raw.githubusercontent.co
 The [in-progress digital design](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/AddSubtract.svg) which sneaks in the concept of negative numbers.
 
 ### Multiplication<a name="multiplication"></a>
-The first reasonable paper prototype: ![paper](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_203637563.jpg)
-Built from a background:
-![background](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/multiply_background.jpg)
-with the following mask on top of it, for both horizontal and vertical directions:
-![x-mask](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/horizontal_sliding_mask.jpg).
-
+<table><tr><td>The first reasonable paper prototype:<br>
+<img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_203637563.jpg">
+  </td><td>
+Built from a background:<br>
+<img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/multiply_background.jpg">
+  </td><td>with the following mask on top of it, for both horizontal and vertical directions:<br>
+<img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/horizontal_sliding_mask.jpg">
+  </td></tr><tr><td>
 In the [full digital design](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/multiplier.svg) the important concepts 0 and numbers above 10 were introduced as inputs.
+  </td></tr></table>
 
 I made a (still jerky, improvements welcome) digital version of it that you can play on touch screens. Try by clicking this image: <a title="play !" href="https://steltenpower.github.io/ElementarySchoolGimmicks/sliding_calculators_multiplication.html">
 <img src="https://repository-images.githubusercontent.com/217832815/2aec6500-1022-11eb-952a-1796fdb14235"></a>
