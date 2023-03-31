@@ -4,19 +4,21 @@
 When I noticed a young kid able to do simple calculations with things, depictions and spoken numbers significantly better than with amounts written in digits, I wondered if learning could be helped by making the abstractions that digits are, explicit WITHIN doing calculations. This resulated in designs for 3 'machines', where every number is always also represented in an amount of depictions:
 
 ### Numbers expressed in the alfabet (in Dutch):
-
-First reasonable paper prototype: shifting 'tens' and 'ones'.
+<table><tr><td>
+First reasonable paper prototype: shifting 'tens' and 'ones'.<br>
 <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/getallenuitspreker_samengesteld.jpg">
-
-But number naming is a little bit more complex than that. To figure that out:
-![naming tens and ones v2](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/getallenuitspreker.jpg)
-
-Which together with the notion of needing physical constraints for how layers can be moved relative to each other, resulted in the [full digital design](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/getal_in_letters_v0.svg) (though the on/off of the trema, so "e" or "ë" is not taken into account yet). Of course we need a english version as well, where "for-teen" and "twenty-four" show there's irregularity in the order of things in that language too.
+  </td><td>
+But number naming is a little bit more complex than that. To figure that out:<br>
+<img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/getallenuitspreker.jpg"></td></tr><tr><td colspan="3">
+Which together with the notion of needing physical constraints for how layers can be moved relative to each other, resulted in the current digital design:<br><img src="https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/getal_in_letters_v0.svg"><br>
+  The on/off of the trema, so "e" or "ë", is not taken into account yet.</td></tr><tr><td colspan="3"> Of course we need a english version as well, where "for-teen" and "twenty-four" show there's irregularity in the order of things in that language too.
+  </td></tr></table>
 
 ### Add and substract, shown as 2 directions along the same scale:
-The first reasonable paper prototype: <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20230328_233125596.jpg" style="transform:rotate(180deg);">
+The first reasonable paper prototype: <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20230328_233125596.jpg">
 
 The [in-progress digital design](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/AddSubtract.svg) which sneaks in the concept of negative numbers.
+
 
 ### Multiplication<a name="multiplication"></a>
 <table><tr><td>The first reasonable paper prototype:<br>
@@ -24,10 +26,16 @@ The [in-progress digital design](https://github.com/steltenpower/ElementarySchoo
   </td><td>
 Built from a background:<br>
 <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/multiply_background.jpg">
-  </td><td>with the following mask on top of it, for both horizontal and vertical directions:<br>
+  </td><td>with the following mask on top of it twice,<br> for both horizontal and vertical directions:<br>
 <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/horizontal_sliding_mask.jpg">
-  </td></tr><tr><td>
-In the [full digital design](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/multiplier.svg) the important concepts 0 and numbers above 10 were introduced as inputs.
+  </td></tr><tr><td colspan="3"> To also introduce the important concepts 0 and numbers above 10 the current full digital design is:<br>
+<img src="https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/multiplier.svg"><br>
+  TODO:<br>
+  introduce empty colums/rows for sturdiness<br>
+  add font-type<br>
+  set size in physical parameters<br>
+  add a reference square of 1cm x 1cm<br>
+  add z=0 and up for the different layers
   </td></tr></table>
 
 I made a (still jerky, improvements welcome) digital version of it that you can play on touch screens. Try by clicking this image: <a title="play !" href="https://steltenpower.github.io/ElementarySchoolGimmicks/sliding_calculators_multiplication.html">
