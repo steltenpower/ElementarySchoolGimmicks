@@ -25,7 +25,7 @@ Built from a background:
 with the following mask on top of it, for both horizontal and vertical directions:
 ![x-mask](https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/horizontal_sliding_mask.jpg).
 
-In the [full digital design](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/muliplier.svg) the important concepts 0 and numbers above 10 were introduced as inputs.
+In the [full digital design](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/multiplier.svg) the important concepts 0 and numbers above 10 were introduced as inputs.
 
 I made a (still jerky, improvements welcome) digital version of it that you can play on touch screens. Try by clicking this image: <a title="play !" href="https://steltenpower.github.io/ElementarySchoolGimmicks/sliding_calculators_multiplication.html">
 <img src="https://repository-images.githubusercontent.com/217832815/2aec6500-1022-11eb-952a-1796fdb14235"></a>
