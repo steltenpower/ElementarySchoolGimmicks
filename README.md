@@ -45,7 +45,7 @@ I made a (still jerky, bugfix welcome) digital version of it that you can play o
 
 ### A static multiplication matrix, with a layout to get a sense of prime numbers <a name="multiplication_static"></a>
 ![keersommen met aantallen](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/keersommen_met_aantallen.jpg)
-A variation on https://upload.wikimedia.org/wikipedia/commons/3/3f/Multiplication_table_to_scale.svg
+A variation on this find: <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Multiplication_table_to_scale.svg">
 
 ### Numbered kid juwelry
 - Rings/bracelets that show digits (similar to what's on combination lock). With a viewing window to read the number from and to keep 2 rings together. Highlight zeroes as those trigger 'carry over'. Of course those high-tech knitters thought of the same: [counting ring](https://www.youtube.com/watch?v=ZLnXdEWwikk)
