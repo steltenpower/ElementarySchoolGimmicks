@@ -48,7 +48,7 @@ I made a (still jerky, bugfix welcome) digital version of it that you can play o
 A variation on this find: <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Multiplication_table_to_scale.svg">
 
 ### Numbered kid juwelry
-- Rings/bracelets that show digits (similar to what's on combination lock). With a viewing window to read the number from and to keep 2 rings together. Highlight zeroes as those trigger 'carry over'. Of course those high-tech knitters thought of the same: [counting ring](https://www.youtube.com/watch?v=ZLnXdEWwikk)
+- Rings/bracelets that show digits (similar to what's on combination lock). With a viewing window to read the number from and to keep 2 rings together. Highlight zeroes as those trigger 'carry over'. Of course those high-tech knitters thought of the same: <a href="https://www.youtube.com/watch?v=ZLnXdEWwikk"><img src="https://www.jimmybeanswool.com/secure-html/productImages/85000/85167Large_b420.jpg"></a><br>
 - Necklace with beads that each have a number, starting with zero and from there add one every time (somebody must have made this, though the closest I got to finding it was this [alphabet necklace](https://rhythmsofplay.com/alphabet-bead-necklace-craft-for-kids/)
 
 ### Font of characters kids learn writing, so I can type a text that kid can practice to write
