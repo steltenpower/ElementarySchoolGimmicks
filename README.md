@@ -32,11 +32,8 @@ Built from a background:<br>
   </td><td>with the following mask on top of it twice,<br> for both horizontal and vertical directions:<br>
 <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/horizontal_sliding_mask.jpg">
   </td></tr><tr><td colspan="3"> To also introduce the important concepts 0 and numbers above 10 the current full digital design is:<br>
-<img src="https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/multiplier.svg"><br>
-<img src="https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/multiplier2.svg"><br>
-  TODO:<br>
-  introduce empty colums/rows for sturdiness
-  </td></tr></table>
+<!-- <img src="https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/multiplier.svg"><br>-->
+<img src="https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/multiplier2.svg"></td></tr></table>
 
 I made a (still jerky, bugfix welcome) digital version of it that you can play on touch screens. Try by clicking this image: <a title="play !" href="https://steltenpower.github.io/ElementarySchoolGimmicks/sliding_calculators_multiplication.html">
 <img src="https://repository-images.githubusercontent.com/217832815/2aec6500-1022-11eb-952a-1796fdb14235"></a>
