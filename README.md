@@ -34,11 +34,7 @@ Built from a background:<br>
   </td></tr><tr><td colspan="3"> To also introduce the important concepts 0 and numbers above 10 the current full digital design is:<br>
 <img src="https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/multiplier.svg"><br>
   TODO:<br>
-  introduce empty colums/rows for sturdiness<br>
-  add font-type<br>
-  set size in physical parameters<br>
-  add a reference square of 1cm x 1cm<br>
-  add z=0 and up for the different layers
+  introduce empty colums/rows for sturdiness
   </td></tr></table>
 
 I made a (still jerky, bugfix welcome) digital version of it that you can play on touch screens. Try by clicking this image: <a title="play !" href="https://steltenpower.github.io/ElementarySchoolGimmicks/sliding_calculators_multiplication.html">
