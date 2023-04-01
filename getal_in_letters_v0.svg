@@ -1,9 +1,17 @@
-<!-- sample rectangle -->
-<svg width="700" height="620" xmlns="http://www.w3.org/2000/svg"
-viewBox="-1 -1 64 56">
 
-  <g dominant-baseline="middle">
+<!-- sample rectangle -->
+<svg width="35cm" height="31cm" xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 62 54">
+
+  <g dominant-baseline="middle" font-family="Arial">
     <g font-size="1px" text-anchor="middle" transform="translate(15.5,1.5)">
+      <text x="17" y="37">z=0</text>
+      <text x="-13" y="10" font-size="0.5px">cm</text>
+      <text x="-14" y="0">z=1</text>
+      <text x="16" y="">z=2</text>
+      <text x="-14" y="36">z=3</text>
+      <g transform="translate(12,34.4)rotate(180)"><text>z=4</text></g>
+      <text x="15" y="24">z=5</text>
       <g transform="translate(29,0)">
         <text y="1">1</text>
         <text y="2">2</text>
