@@ -1,9 +1,9 @@
 # Elementary School Gimmicks
 
-## Number sliders
+## Number slides
 When I noticed a young kid able to do simple calculations with things, depictions and spoken numbers significantly better than with amounts written in digits, I wondered if learning could be helped by making the abstractions that digits are, explicit WITHIN doing calculations. This resulted in designs for 3 'machines', where every number is always also represented in an amount of depictions:
 
-### Numbers expressed in the alfabet (in Dutch):
+### Slide Spelling (Dutch):
 <table><tr><td>
 First reasonable paper prototype: shifting 'tens' and 'ones'.<br>
 <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/getallenuitspreker_samengesteld.jpg">
@@ -17,13 +17,14 @@ Which together with the notion of needing physical constraints for how layers ca
   <tr><td colspan="3"> Of course we need a english version as well, where "for-teen" and "twenty-four" show there's irregularity in the order of things in that language too.
   </td></tr></table>
 
-### Add and substract, shown as 2 directions along the same scale:
+### Slide PlusMinus
+Showing that adding and substracting are the same thing in a different direction.<br>
 The first reasonable paper prototype: <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20230328_233125596.jpg">
 
 The [in-progress digital design](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/AddSubtract.svg) which sneaks in the concept of negative numbers.
 
 
-### Multiplication<a name="multiplication"></a>
+### Slide Multiply <a name="multiplication"></a>
 <table><tr><td>The first reasonable paper prototype:<br>
 <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20200501_203637563.jpg">
   </td><td>
