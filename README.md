@@ -41,7 +41,7 @@ Built from a background:<br>
   add z=0 and up for the different layers
   </td></tr></table>
 
-I made a (still jerky, improvements welcome) digital version of it that you can play on touch screens. Try by clicking this image: <a title="play !" href="https://steltenpower.github.io/ElementarySchoolGimmicks/sliding_calculators_multiplication.html">
+I made a (still jerky, bugfix welcome) digital version of it that you can play on touch screens. Try by clicking this image: <a title="play !" href="https://steltenpower.github.io/ElementarySchoolGimmicks/sliding_calculators_multiplication.html">
 <img src="https://repository-images.githubusercontent.com/217832815/2aec6500-1022-11eb-952a-1796fdb14235"></a>
 
 ## Some more ideas for learning numbers and calculations:
@@ -63,5 +63,3 @@ notes:
 - https://www.sitepoint.com/masking-in-the-browser-with-css-and-svg/
 - https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-rule#Example_2
 - http://www.petercollingridge.co.uk/tutorials/svg/interactive/dragging/
-
-
