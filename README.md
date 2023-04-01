@@ -13,12 +13,8 @@ But number naming is a little bit more complex than that. To figure that out:<br
 Which together with the notion of needing physical constraints for how layers can be moved relative to each other, resulted in the current digital design:<br><img src="https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/getal_in_letters_v0.svg"><br>
   The on/off of the trema, so "e" or "ë", is not taken into account yet.
   TODO:<br>
-  introduce empty colums/rows for sturdiness<br>
-  add font-type<br>
-  set size in physical parameters<br>
-  add a reference square of 1cm x 1cm<br>
-  add z=0 and up for the different layers
-</td></tr><tr><td colspan="3"> Of course we need a english version as well, where "for-teen" and "twenty-four" show there's irregularity in the order of things in that language too.
+  introduce empty colums/rows for sturdiness</td></tr>
+  <tr><td colspan="3"> Of course we need a english version as well, where "for-teen" and "twenty-four" show there's irregularity in the order of things in that language too.
   </td></tr></table>
 
 ### Add and substract, shown as 2 directions along the same scale:
