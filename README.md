@@ -19,9 +19,11 @@ Which together with the notion of needing physical constraints for how layers ca
 
 ### Slide PlusMinus
 Showing that adding and substracting are the same thing in a different direction.<br>
-The first reasonable paper prototype: <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20230328_233125596.jpg">
+And sneaking in the concept of negative numbers.<br>
+The first reasonable paper prototype: <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/IMG_20230328_233125596.jpg"><br>
 
-The [in-progress digital design](https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/AddSubtract.svg) which sneaks in the concept of negative numbers.
+The UNDER CONSTRUCTION digital design:<br>
+<img src="https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/AddSubtract.svg">
 
 
 ### Slide Multiply <a name="multiplication"></a>
