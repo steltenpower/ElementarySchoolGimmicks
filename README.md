@@ -33,6 +33,7 @@ Built from a background:<br>
 <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/horizontal_sliding_mask.jpg">
   </td></tr><tr><td colspan="3"> To also introduce the important concepts 0 and numbers above 10 the current full digital design is:<br>
 <img src="https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/multiplier.svg"><br>
+<img src="https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/multiplier2.svg"><br>
   TODO:<br>
   introduce empty colums/rows for sturdiness
   </td></tr></table>
