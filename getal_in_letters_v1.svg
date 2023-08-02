@@ -1,0 +1,276 @@
+<svg viewBox="5 13 151 88" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		rect,path,polygon{
+		   stroke-width: 0.01;
+		}
+		rect,path{
+			stroke:red;
+			                                fill:none;  
+		}
+		text,tspan{
+			dominant-baseline:middle;
+		}
+		.digit{
+			font-size:1px;
+			text-anchor:middle; 
+		}
+		.chars{
+			font-size:0.5px;
+		}
+	</style>
+	<defs>
+		<text id="OneNine" class="digit">
+			<tspan x="0" dy="1">1</tspan>
+			<tspan x="0" dy="1">2</tspan>
+			<tspan x="0" dy="1">3</tspan>
+			<tspan x="0" dy="1">4</tspan>
+			<tspan x="0" dy="1">5</tspan>
+			<tspan x="0" dy="1">6</tspan>
+			<tspan x="0" dy="1">7</tspan>
+			<tspan x="0" dy="1">8</tspan>
+			<tspan x="0" dy="1">9</tspan>
+			<tspan x="0" dy="1" xml:space="preserve"> </tspan>
+		</text>
+		<g id="col_emoji">
+			<g transform="translate(0,-0.1)">
+				<circle r="0.4"/>
+				<circle r="0.4" cy="1"/>
+				<circle r="0.4" cy="2"/>
+				<circle r="0.4" cy="3"/>
+				<circle r="0.4" cy="4"/>
+			</g>
+			<g transform="translate(0,+0.1)translate(0,5)">
+				<circle r="0.4"/>
+				<circle r="0.4" cy="1"/>
+				<circle r="0.4" cy="2"/>
+				<circle r="0.4" cy="3"/>
+			</g>
+		</g>
+		<g id="col5_emoji">
+			<use x="0" href="#col_emoji"/>
+			<use x="1" href="#col_emoji"/>
+			<use x="2" href="#col_emoji"/>
+			<use x="3" href="#col_emoji"/>
+			<use x="4" href="#col_emoji"/>
+		</g>
+
+
+		<g id="z0">
+			<rect y="-11" width="29" height="35" fill="red"/>
+		</g>
+
+
+		<g id="z1">
+			<path d="M17,22 v2 h-17 v-35 h29 v35 h-9 v-2 h7 v-31 h-25 v31 z" fill="red"/>
+			<g transform="translate(0,9)translate(0,-0)"><!-- (0,a) met 0<=a<=9 -->
+				<path d="M2,0 v-9 h25 v9 v13 h-7 v13 h-3 v-13 h-15 z" fill="orange" fill-opacity="1"/>
+				<g transform="translate(17,1)">
+					<g transform="translate(0.5,0.5)">
+						<use href="#OneNine"/>
+						<text class="digit">
+							<tspan>0</tspan>
+							<tspan x="0" dy="1" xml:space="preserve"> </tspan>
+						</text>
+						<g transform="translate(2,1)">
+							<use href="#col_emoji"/>
+						</g>
+					</g>
+					<g transform="translate(5,-0.25)">
+						<text class="chars" text-anchor="end">
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve">^        elf</tspan>
+							<tspan x="0" dy="0.5">een</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve">^  twaalf</tspan>
+							<tspan x="0" dy="0.5">twee</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve">^       der</tspan>
+							<tspan x="0" dy="0.5">drie</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve">^     veer</tspan>
+							<tspan x="0" dy="0.5">vier</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5">vijf</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5">zes</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5">zeven</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5">acht</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5">negen</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+						</text>
+						<g transform="translate(-5,0.25)" stroke-width="0.01">
+							<line x1="0" y1="0" x2="5" y2="0" stroke="black"/>
+							<line x1="0" y1="1" x2="5" y2="1" stroke="black"/>
+							<line x1="0" y1="2" x2="5" y2="2" stroke="black"/>
+							<line x1="0" y1="3" x2="5" y2="3" stroke="black"/>
+							<line x1="0" y1="4" x2="5" y2="4" stroke="black"/>
+							<line x1="0" y1="5" x2="5" y2="5" stroke="black"/>
+							<line x1="0" y1="6" x2="5" y2="6" stroke="black"/>
+							<line x1="0" y1="7" x2="5" y2="7" stroke="black"/>
+							<line x1="0" y1="8" x2="5" y2="8" stroke="black"/>
+							<line x1="0" y1="9" x2="5" y2="9" stroke="black"/>
+							<line x1="0" y1="10" x2="5" y2="10" stroke="black"/>
+						</g>
+						<g transform="translate(-2,0.75)" stroke-width="0.01">
+							<line x1="0" y1="0" x2="2" y2="0" stroke="black"/>
+							<line x1="0" y1="1" x2="2" y2="1" stroke="black"/>
+							<line x1="0" y1="2" x2="2" y2="2" stroke="black"/>
+							<line x1="0" y1="3" x2="2" y2="3" stroke="black"/>
+							<line x1="0" y1="4" x2="2" y2="4" stroke="black"/>
+							<line x1="0" y1="5" x2="2" y2="5" stroke="black"/>
+							<line x1="0" y1="6" x2="2" y2="6" stroke="black"/>
+							<line x1="0" y1="7" x2="2" y2="7" stroke="black"/>
+							<line x1="0" y1="8" x2="2" y2="8" stroke="black"/>
+							<line x1="0" y1="9" x2="2" y2="9" stroke="black"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+
+
+		<g id="z2">
+			<path d="M14,22 v2 h-14 v-35 h29 v35 h-9 v-2 h7 v-31 h-25 v31 z
+			M17,13 v13 h3 v-13 z" fill="red"/>
+			<g transform="translate(0,9)translate(0,-0)"><!-- (0,b) met 0<=b<=9 -->
+				<rect x="2" y="-9" width="2" height="22" fill="orange"/>
+				<rect x="25" y="-9" width="2" height="22" fill="lightgreen"/>
+				<g fill-rule="nonzero" fill="yellow" fill-opacity="1">
+					<path d="M4,0 v-9 h21 v9 v13 h-8 v13 h-3 v-13 h-10 z
+				M17,-7 v18 h5 v-18 z"/>
+				</g>
+				<g transform="translate(16,1)">
+					<g transform="translate(0.5,0.5)">
+						<g transform="translate(-11,1)">
+							<g transform="translate(0,0)translate(-0.1,0)">
+								<use href="#col5_emoji"/>
+							</g>
+							<g transform="translate(5,0)translate(+0.1,0)">
+								<use href="#col5_emoji"/>
+							</g>
+						</g>
+						<use href="#OneNine"/>
+					</g>
+					<g transform="translate(6,-0.25)">
+						<text class="chars" text-anchor="start">
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve">tien  ^</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve">    tien</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5">entwintig</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5">endertig</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5">enveertig</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5">envijftig</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5">enzestig</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5">enzeventig</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5">entachtig</tspan>
+							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							<tspan x="0" dy="0.5">ennegentig</tspan>
+						</text>
+						<g transform="translate(-8,0.25)" stroke-width="0.01">
+							<line x1="0" y1="0" x2="11" y2="0" stroke="black"/>
+							<line x1="0" y1="1" x2="11" y2="1" stroke="black"/>
+							<line x1="0" y1="2" x2="11" y2="2" stroke="black"/>
+							<line x1="0" y1="3" x2="11" y2="3" stroke="black"/>
+							<line x1="0" y1="4" x2="11" y2="4" stroke="black"/>
+							<line x1="0" y1="5" x2="11" y2="5" stroke="black"/>
+							<line x1="0" y1="6" x2="11" y2="6" stroke="black"/>
+							<line x1="0" y1="7" x2="11" y2="7" stroke="black"/>
+							<line x1="0" y1="8" x2="11" y2="8" stroke="black"/>
+							<line x1="0" y1="9" x2="11" y2="9" stroke="black"/>
+							<line x1="0" y1="10" x2="11" y2="10" stroke="black"/>
+						</g>
+						<g transform="translate(0,0.75)" stroke-width="0.01">
+							<line x1="0" y1="0" x2="3" y2="0" stroke="black"/>
+							<line x1="0" y1="1" x2="3" y2="1" stroke="black"/>
+							<line x1="0" y1="2" x2="3" y2="2" stroke="black"/>
+							<line x1="0" y1="3" x2="3" y2="3" stroke="black"/>
+							<line x1="0" y1="4" x2="3" y2="4" stroke="black"/>
+							<line x1="0" y1="5" x2="3" y2="5" stroke="black"/>
+							<line x1="0" y1="6" x2="3" y2="6" stroke="black"/>
+							<line x1="0" y1="7" x2="3" y2="7" stroke="black"/>
+							<line x1="0" y1="8" x2="3" y2="8" stroke="black"/>
+							<line x1="0" y1="9" x2="3" y2="9" stroke="black"/>
+						</g>
+						
+					</g>
+				</g>
+			</g>
+			<text class="digit" x="15.5" y="23.5">/\</text>
+			<text class="digit" x="15.5" y="25.5">\/</text>
+		</g>
+		<g id="z3">
+			<path d="M17,22 v2 h-17 v-35 h29 v35 h-9 v-2 h7 v-31 h-25 v31 z" fill="red"/>
+			<g transform="translate(0,9)translate(0,-0)"><!-- (0,a) met 0<=a<=9 -->
+				<g fill-rule="nonzero" fill="lightgreen" fill-opacity="1">
+					<path d="M2,-9 v22 h15 v13 h3 v-13 h7 v-22 z
+				M5,11 v-18 h12 v8 h1 v1 h4 v0.5 h2.5 v0.5 h-2.5 v0.5 h2.5 v7.5 z
+				M22.5,2 v-0.5 h2 v0.5 z"/>
+				</g>
+			</g>
+			<text class="digit" x="18.5" y="23.5">/\</text>
+			<text class="digit" x="18.5" y="25.5">\/</text>
+		</g>
+
+
+		<g id="z4">
+			<path d="M20.5,22 v2 h-20.5 v-35 h29 v35 h-4.5 v-2 h2.5 v-31 h-25 v31 z" fill="red"/>
+			<g transform="translate(0,-0)translate(0,-0.5)"><!-- (0,d/2) met -1<=d<=1 -->
+				<g fill-rule="nonzero" fill="lightblue" fill-opacity="1">
+					<path d="M2,0 v-8.5 h25 v8.5 v21.5 h-2.5 v5 h-4 v-5 h-18.5 z
+					M5,1.5 v10 h10 v-10 z
+					M16,9.5 v2 h2 v-2 z
+					M19,1.5 v10 h1 v-0.5 h4.5 v-1 h-4.5 v-8.5 z"/>
+				</g>
+				<text x="21" y="9.75" class="chars" xml:space="preserve"> /\  /\  /\  /\ </text>
+				<text x="21" y="11.25" class="chars" xml:space="preserve"> \/  \/  \/  \/ </text>
+				<text x="21" y="13.25" class="chars" xml:space="preserve">^       ^</text>
+				<text x="21" y="13.75" class="chars" xml:space="preserve"> \/  \/  \/ </text>
+			</g>
+			<text class="digit" x="22.5" y="24">/\</text>
+			<text class="digit" x="22.5" y="25.5">\/</text>
+		</g>
+
+
+		<g id="z5">
+			<g fill-rule="nonzero" fill="red" fill-opacity="1">
+				<path d="m0,0 v-11 h29 v11 v24 h-29 z
+				M5,2 v9 h10 v-9 z
+				M16,10 v1 h2 v-1 z
+				M19,2 v9 h5.5 v-1 h-4.5 v-8 z
+				M20.5,13 v1 h4 v-1 z"/>
+			</g>
+			<text class="digit" x="20" y="12">0 = nul = geen</text>
+			<polyline points="25,9.75 26,9.75" stroke="white" stroke-width="0.1"/>
+			<polyline points="27,9.75 28,9.75" stroke="white" stroke-width="0.1"/>
+			<polyline points="25,10.25 28,10.25" stroke="white" stroke-width="0.1"/>
+			<polyline points="25,10.75 28,10.75" stroke="white" stroke-width="0.1"/>
+		</g>
+	</defs>
+	
+	
+	<g transform="translate(6,64)">
+		<use href="#z0"/>
+		<use href="#z1"/>
+		<use href="#z2"/>
+		<use href="#z3"/>
+		<use href="#z4"/>
+		<use href="#z5"/>
+	</g>
+	<g transform="translate(6,25)">
+		<use x=  "0" href="#z0"/>
+		<use x= "30" href="#z1"/>
+		<use x= "60" href="#z2"/>
+		<use x= "90" href="#z3"/>
+		<use x="120" href="#z4"/>
+		<use x="120" y="39" href="#z5"/>
+	</g>
+</svg>
