@@ -1,8 +1,7 @@
-<svg viewBox="-33 -2 124 80" width="62cm" height="40cm" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="-33 -2 124 80" width="124cm" height="80cm" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
 
 <!--
 Icon=Unicode+SpacingLeftRight/SpacingTopBottom
-Unit=10mm
 Fonts get scrambled elsewhere
 
 ParaMetrisch met Search&Replace op unieke identifier verstopt ver achter de komma van waarde
@@ -15,7 +14,7 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 			fill-rule: nonzero;
 			fill-opacity:0;
 		}
-		path.draw{
+		rect.draw,path.draw{
 			stroke:black;
 			stroke-width: 0.05;
 		}
@@ -60,15 +59,22 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 		</g>
 
 
-		<rect id="z0" width="29" height="35" fill="red"/>
+	<g id="z0">
+		<rect width="29" height="35" fill="red"/>
+		<g transform="translate(15,15)">
+			<rect class="draw" width="1" height="1"/>
+			<text class="chars" x="0.2" y="0.5">cm</text>
+		</g>
+		<g transform="translate(3.5,2.3)scale(3)"><text class="digit">z=0</text></g>
+	</g>
 
 
-		<g id="z1" transform="translate(0,11)">
-			<path fill="red" d="M17,22 v2 h-17 v-35 h29 v35 h-9 v-2 h7 v-31 h-25 v31 z"/>
-			<g transform="translate(0,9)">
+		<g id="z1">
+			<path fill="red" d="M0,0 h29 v35 h-9 v-2 h7 v-31 h-25 v31 h15 v2 h-17 z"/>
+			<g transform="translate(2,2)translate(0,9)">
 				<g id="shift_ones_bottom" transform="translate(0,-9)"><!-- (0,-a) met 0<=a<=9 -->
-					<path fill="orange" d="M2,0 v-9 h25 v9 v13 h-7 v13 h-3 v-13 h-15 z"/>
-					<g transform="translate(17,1)">
+					<path fill="orange" d="M0,0 h25 v22 h-7 v13 h-3 v-13 h-15 z"/>
+					<g transform="translate(15,10)">
 						<g transform="translate(0.5,0.5)">
 							<use href="#OneNine"/>
 							<text class="digit">
@@ -100,67 +106,76 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 					</g>
 				</g>
 			</g>
+			<g transform="translate(3.5,2.3)scale(3)"><text class="digit">z=1</text></g>
 		</g>
 
 
-		<g id="z2" transform="translate(0,11)">
-			<path fill="red" d="M14,22 v2 h-14 v-35 h29 v35 h-9 v-2 h7 v-31 h-25 v31 z     M17,13 v13 h3 v-13 z"/>
-			<g transform="translate(0,9)">
-				<g id="shift_tens" transform="translate(0,-9)"><!-- (0,-b) met 0<=b<=9 -->
-					<rect fill="orange"      x="2" y="-9" width="2" height="22"/>
-					<rect fill="lightgreen" x="25" y="-9" width="2" height="22"/>
-					<path fill="yellow" d="M4,0 v-9 h21 v9 v13 h-8 v13 h-3 v-13 h-10 z      M17,-7 v18 h5 v-18 z"/>
-					<g transform="translate(16,1)">
-						<g transform="translate(0.5,0.5)">
-							<g transform="translate(-11,1)">
-								<use x="-0.1" href="#col5_emoji"/>
-								<g transform="translate(5,0)">
-									<use x="+0.1" href="#col5_emoji"/>
+		<g id="z2">
+			<path fill="red" d="M 14,33 v2 h-14 v-35 h29 v35 h-9 v-2 h7 v-31 h-25 v31 z
+			                     M17,24 v13 h3 v-13 z"/>
+			<g transform="translate(2,2)">					 
+				<rect fill="orange"      width="2" height="22"/>
+				<rect fill="lightgreen" x="23" width="2" height="22"/>
+				<g transform="translate(0,9)">
+					<g id="shift_tens" transform="translate(0,-9)"><!-- (0,-b) met 0<=b<=9 -->
+						<path fill="yellow" d="M  2,9 v-9 h21 v9 v13 h-8 v13 h-3 v-13 h-10 z
+												M15,2 v18 h5 v-18 z"/>
+						<g transform="translate(14,10)">
+							<g transform="translate(0.5,0.5)">
+								<g transform="translate(-11,1)">
+									<use x="-0.1" href="#col5_emoji"/>
+									<g transform="translate(5,0)">
+										<use x="+0.1" href="#col5_emoji"/>
+									</g>
 								</g>
+								<use href="#OneNine"/>
 							</g>
-							<use href="#OneNine"/>
+							<g transform="translate(6,-0.25)">
+								<text class="chars" text-anchor="start">
+									<tspan x="0" dy="1.5" xml:space="preserve">tien  ^</tspan>
+									<tspan x="0" dy="0.5" xml:space="preserve">    tien</tspan>
+									<tspan x="0" dy="1">entwintig</tspan>
+									<tspan x="0" dy="1">endertig</tspan>
+									<tspan x="0" dy="1">enveertig</tspan>
+									<tspan x="0" dy="1">envijftig</tspan>
+									<tspan x="0" dy="1">enzestig</tspan>
+									<tspan x="0" dy="1">enzeventig</tspan>
+									<tspan x="0" dy="1">entachtig</tspan>
+									<tspan x="0" dy="1">ennegentig</tspan>
+								</text>
+								<path class="draw" d="M-8,0.25 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1"/>
+								<path class="draw" d="M0,0.75 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1"/>
+							</g>
 						</g>
-						<g transform="translate(6,-0.25)">
-							<text class="chars" text-anchor="start">
-								<tspan x="0" dy="1.5" xml:space="preserve">tien  ^</tspan>
-								<tspan x="0" dy="0.5" xml:space="preserve">    tien</tspan>
-								<tspan x="0" dy="1">entwintig</tspan>
-								<tspan x="0" dy="1">endertig</tspan>
-								<tspan x="0" dy="1">enveertig</tspan>
-								<tspan x="0" dy="1">envijftig</tspan>
-								<tspan x="0" dy="1">enzestig</tspan>
-								<tspan x="0" dy="1">enzeventig</tspan>
-								<tspan x="0" dy="1">entachtig</tspan>
-								<tspan x="0" dy="1">ennegentig</tspan>
-							</text>
-							<path class="draw" d="M-8,0.25 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1"/>
-							<path class="draw" d="M0,0.75 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1"/>
+						<g class="digit" transform="translate(13.5,34.5)">
+							<text y="-10">/\ /\ /\</text>
+							<text y="-2">/\ +10</text>
+							<text>\/ -10</text>
 						</g>
-					</g>
-					<g class="digit" transform="translate(15.5,25.5)">
-						<text y="-10">/\ /\ /\</text>
-						<text y="-2">/\ +1</text>
-						<text>\/ -1</text>
 					</g>
 				</g>
 			</g>
+			<g transform="translate(3.5,2.3)scale(3)"><text class="digit">z=2</text></g>
+			<g transform="translate(25.5,2.3)scale(3)"><text class="digit">z=2</text></g>
+			<g transform="translate(18.5,30)scale(1.5)"><text class="digit">z=2</text></g>
 		</g>
 		
 		
-		<g id="z3" transform="translate(0,11)">
-			<path fill="red" d="M17,22 v2 h-17 v-35 h29 v35 h-9 v-2 h7 v-31 h-25 v31 z"/>
-			<g transform="translate(0,9)">
-				<g id="shift_ones_top" transform="translate(0,-9)"><!-- (0,-a) met 0<=a<=9 -->
-					<path fill="lightgreen" d="M2,-9 v22 h15 v13 h3 v-13 h7 v-22 z
-					M5,11 v-18 h12 v8 h1 v1 h4 v0.5 h2.5 v0.5 h-2.5 v0.5 h2.5 v7.5 z
-					M22.5,2 v-0.5 h2 v0.5 z"/>
-					<g class="digit" transform="translate(18.5,25.5)">
+		<g id="z3">
+			<path fill="red" d="M0,0 h29 v35 h-9 v-2 h7 v-31 h-25 v31 h15 v2 h-17 z"/>
+			<g id="shift_ones_top" transform="translate(0,-9)"><!-- (0,-a) met 0<=a<=9 -->
+				<g transform="translate(2,2)">
+					<path fill="lightgreen" d="M0,9 v22 h15 v13 h3 v-13 h7 v-22 z
+					M3,29 v-18 h12 v8 h1 v1 h4 v0.5 h2.5 v0.5 h-2.5 v0.5 h2.5 v7.5 z
+					M20.5,20 v-0.5 h2 v0.5 z"/>
+					<g class="digit" transform="translate(16.5,43.5)">
 						<text y="-10">/\ /\ /\</text>
 						<text y="-2">/\ +1</text>
 						<text>\/ -1</text>
 					</g>
 				</g>
 			</g>
+			<g transform="translate(3.5,2.3)scale(3)"><text class="digit">z=3</text></g>
 		</g>
 
 
@@ -174,28 +189,28 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 						M14,18 v2 h2 v-2 z
 						M17,10 v10 h1 v-0.5 h4.5 v-1 h-4.5 v-8.5 z"/>
 						<g text-anchor="middle" transform="translate(20.5,19)" class="chars">
-							<text y="-0.75" xml:space="preserve"> /\  /\  /\  /\ </text>
-							<text y= "0.75" xml:space="preserve"> \/  \/  \/  \/ </text>
+							<text y="-0.75" xml:space="preserve">/\  /\  /\  /\</text>
+							<text y= "0.75" xml:space="preserve">\/  \/  \/  \/</text>
 							<g transform="translate(0,2.75)">
 								<text y="0"   xml:space="preserve">^       ^</text>
-								<text y="0.5" xml:space="preserve"> \/  \/  \/ </text>
+								<text y="0.5" xml:space="preserve">\/  \/  \/</text>
 							</g>
 							<g transform="translate(0,15.5)">
 								<text y="-2.5">/\/\/\</text>
-								<text y="-2">/\ block bottom</text>
-								<text>\/ block top</text>
+								<text y="-2">/\ verstop onderste</text>
+								<text>\/ verstop bovenste</text>
 							</g>
 						</g>
 					</g>
 				</g>
 			</g>
+			<g transform="translate(3.5,2.3)scale(3)"><text class="digit">z=4</text></g>
 		</g>
 
 
 		<g id="z5">
 			<path fill="red" d="M0,0 h29 v35 h-29 z
-			M5,13 v9 h10 v-9 z
-			M16,21 v1 h2 v-1 z
+			M5,13 v9 h10 v-9 z      M16,21 v1 h2 v-1 z
 			M19,13 v9 h5.5 v-1 h-4.5 v-8 z
 			M20.5,24 v1 h4 v-1 z"/>
 			<text class="digit" x="20" y="23">0 = nul = geen</text>
@@ -213,7 +228,6 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 		<use href="#z3" x="60"/>
 	</g>
 	<g transform="translate(-31,0)">
-		<rect x="-1" y="-1" width="122" height="77" fill="lightgrey"/>
 		<g transform="translate(0,15)"><!-- all layers repeated, but stacked -->
 			<use href="#z0"/>
 			<use href="#z1"/>
