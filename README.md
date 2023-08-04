@@ -54,11 +54,11 @@ A variation on this find: <img src="https://upload.wikimedia.org/wikipedia/commo
 - Necklace with beads that each have a number, starting with zero and from there add one every time (somebody must have made this, though the closest I got to finding it was this <a href="https://rhythmsofplay.com/alphabet-bead-necklace-craft-for-kids/"><img src="https://rhythmsofplay.com/wp-content/uploads/2017/09/Alphabet-bead-necklace-jewelry-for-kids-pin3-768x1153.jpg" width="20%"></a>
 
 ### Font of characters kids learn writing, so I can type a text that kid can practice to write
+I should ask at my kids school
 
 ### Pattern Recognition that does ping or BUZZ based on handwritten or spoken numbers
+Call it AI if you want
 
 
-notes:
-- https://www.sitepoint.com/masking-in-the-browser-with-css-and-svg/
-- https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-rule#Example_2
+note:
 - http://www.petercollingridge.co.uk/tutorials/svg/interactive/dragging/
