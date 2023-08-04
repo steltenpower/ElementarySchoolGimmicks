@@ -1,7 +1,7 @@
 # Elementary School Gimmicks
 
 ## Number slides
-When I noticed a young kid able to do simple calculations with things, depictions and spoken numbers significantly better than with amounts written in digits, I wondered if learning could be helped by making the abstractions that digits are, explicit WITHIN doing calculations. This resulted in designs for 3 'machines', where every number is always also represented in an amount.
+When I noticed a young kid able to do simple calculations with things, depictions and spoken numbers significantly better than with amounts written in digits, I wondered if learning could be helped by making the abstractions that digits are, explicit WITHIN doing calculations. This resulted in designs for 3 'machines', where every number is always also represented in an amount (of emoji).
 
 ### Slide Spelling (Dutch):
 <table><tr><td>
