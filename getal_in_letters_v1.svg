@@ -1,4 +1,4 @@
-<svg viewBox="-33 -13 124 80" width="62cm" height="40cm" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="-33 -2 124 80" width="62cm" height="40cm" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
 
 <!--
 Icon=Unicode+SpacingLeftRight/SpacingTopBottom
@@ -6,6 +6,7 @@ Unit=10mm
 Fonts get scrambled elsewhere
 
 ParaMetrisch met Search&Replace op unieke identifier verstopt ver achter de komma van waarde
+clean up code by using repetitive patterns? Rhino3D might not support it.
 -->
 	<style>
 		rect,path{
@@ -14,7 +15,7 @@ ParaMetrisch met Search&Replace op unieke identifier verstopt ver achter de komm
 			fill-rule: nonzero;
 			fill-opacity:0;
 		}
-		line,polyline{
+		path.draw{
 			stroke:black;
 			stroke-width: 0.05;
 		}
@@ -42,19 +43,12 @@ ParaMetrisch met Search&Replace op unieke identifier verstopt ver achter de komm
 			<tspan x="0" dy="1">9</tspan>
 			<tspan x="0" dy="1" xml:space="preserve"> </tspan>
 		</text>
-		<g id="col_emoji">
+		<g id="col_emoji" transform="translate(0,-1)">
 			<g transform="translate(0,-0.1)">
-				<circle r="0.4"/>
-				<circle r="0.4" cy="1"/>
-				<circle r="0.4" cy="2"/>
-				<circle r="0.4" cy="3"/>
-				<circle r="0.4" cy="4"/>
+				<circle r="0.4" cy="1"/><circle r="0.4" cy="2"/><circle r="0.4" cy="3"/><circle r="0.4" cy="4"/><circle r="0.4" cy="5"/>
 			</g>
-			<g transform="translate(0,+0.1)translate(0,5)">
-				<circle r="0.4"/>
-				<circle r="0.4" cy="1"/>
-				<circle r="0.4" cy="2"/>
-				<circle r="0.4" cy="3"/>
+			<g transform="translate(0,+0.1)">
+				<circle r="0.4" cy="6"/><circle r="0.4" cy="7"/><circle r="0.4" cy="8"/><circle r="0.4" cy="9"/>
 			</g>
 		</g>
 		<g id="col5_emoji">
@@ -69,67 +63,39 @@ ParaMetrisch met Search&Replace op unieke identifier verstopt ver achter de komm
 		<rect id="z0" width="29" height="35" fill="red"/>
 
 
-		<g id="z1">
+		<g id="z1" transform="translate(0,11)">
 			<path fill="red" d="M17,22 v2 h-17 v-35 h29 v35 h-9 v-2 h7 v-31 h-25 v31 z"/>
-			<g transform="translate(0,9)translate(0,-9)"><!-- (0,a) met 0<=a<=9 -->
-				<path fill="orange" d="M2,0 v-9 h25 v9 v13 h-7 v13 h-3 v-13 h-15 z"/>
-				<g transform="translate(17,1)">
-					<g transform="translate(0.5,0.5)">
-						<use href="#OneNine"/>
-						<text class="digit">
-							<tspan>0</tspan>
-							<tspan x="0" dy="1" xml:space="preserve"> </tspan>
-						</text>
-						<use x="2" y="1" href="#col_emoji"/>
-					</g>
-					<g transform="translate(5,-0.25)">
-						<text class="chars" text-anchor="end">
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve">^        elf</tspan>
-							<tspan x="0" dy="0.5">een</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve">^  twaalf</tspan>
-							<tspan x="0" dy="0.5">twee</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve">^       der</tspan>
-							<tspan x="0" dy="0.5">drie</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve">^     veer</tspan>
-							<tspan x="0" dy="0.5">vier</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5">vijf</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5">zes</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5">zeven</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5">acht</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5">negen</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-						</text>
-						<g transform="translate(-5,0.25)">
-							<line x1="0" y1="0" x2="5" y2="0"/>
-							<line x1="0" y1="1" x2="5" y2="1"/>
-							<line x1="0" y1="2" x2="5" y2="2"/>
-							<line x1="0" y1="3" x2="5" y2="3"/>
-							<line x1="0" y1="4" x2="5" y2="4"/>
-							<line x1="0" y1="5" x2="5" y2="5"/>
-							<line x1="0" y1="6" x2="5" y2="6"/>
-							<line x1="0" y1="7" x2="5" y2="7"/>
-							<line x1="0" y1="8" x2="5" y2="8"/>
-							<line x1="0" y1="9" x2="5" y2="9"/>
-							<line x1="0" y1="10" x2="5" y2="10"/>
+			<g transform="translate(0,9)">
+				<g id="shift_ones_bottom" transform="translate(0,-9)"><!-- (0,-a) met 0<=a<=9 -->
+					<path fill="orange" d="M2,0 v-9 h25 v9 v13 h-7 v13 h-3 v-13 h-15 z"/>
+					<g transform="translate(17,1)">
+						<g transform="translate(0.5,0.5)">
+							<use href="#OneNine"/>
+							<text class="digit">
+								<tspan>0</tspan>
+								<tspan x="0" dy="1" xml:space="preserve"> </tspan>
+							</text>
+							<use x="2" y="1" href="#col_emoji"/>
 						</g>
-						<g transform="translate(-2,0.75)">
-							<line x1="0" y1="0" x2="2" y2="0"/>
-							<line x1="0" y1="1" x2="2" y2="1"/>
-							<line x1="0" y1="2" x2="2" y2="2"/>
-							<line x1="0" y1="3" x2="2" y2="3"/>
-							<line x1="0" y1="4" x2="2" y2="4"/>
-							<line x1="0" y1="5" x2="2" y2="5"/>
-							<line x1="0" y1="6" x2="2" y2="6"/>
-							<line x1="0" y1="7" x2="2" y2="7"/>
-							<line x1="0" y1="8" x2="2" y2="8"/>
-							<line x1="0" y1="9" x2="2" y2="9"/>
+						<g transform="translate(5,-0.25)">
+							<text class="chars" text-anchor="end">
+								<tspan x="0" dy="1.5" xml:space="preserve">^        elf</tspan>
+								<tspan x="0" dy="0.5">een</tspan>
+								<tspan x="0" dy="0.5" xml:space="preserve">^  twaalf</tspan>
+								<tspan x="0" dy="0.5">twee</tspan>
+								<tspan x="0" dy="0.5" xml:space="preserve">^       der</tspan>
+								<tspan x="0" dy="0.5">drie</tspan>
+								<tspan x="0" dy="0.5" xml:space="preserve">^     veer</tspan>
+								<tspan x="0" dy="0.5">vier</tspan>
+								<tspan x="0" dy="1"  >vijf</tspan>
+								<tspan x="0" dy="1"  >zes</tspan>
+								<tspan x="0" dy="1"  >zeven</tspan>
+								<tspan x="0" dy="1"  >acht</tspan>
+								<tspan x="0" dy="1"  >negen</tspan>
+								<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							</text>
+							<path class="draw" d="M-5,0.25 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1"/>
+							<path class="draw" d="M-2,0.75 h2 m-2,1 h2 m-2,1 h2 m-2,1 h2 m-2,1 h2 m-2,1 h2 m-2,1 h2 m-2,1 h2 m-2,1 h2 m-2,1 h2 m-2,1"/>
 						</g>
 					</g>
 				</g>
@@ -137,117 +103,91 @@ ParaMetrisch met Search&Replace op unieke identifier verstopt ver achter de komm
 		</g>
 
 
-		<g id="z2">
-			<path fill="red" d="M14,22 v2 h-14 v-35 h29 v35 h-9 v-2 h7 v-31 h-25 v31 z
-			M17,13 v13 h3 v-13 z"/>
-			<g transform="translate(0,9)translate(0,-9)"><!-- (0,b) met 0<=b<=9 -->
-				<rect fill="orange"      x="2" y="-9" width="2" height="22"/>
-				<rect fill="lightgreen" x="25" y="-9" width="2" height="22"/>
-				<path fill="yellow" d="M4,0 v-9 h21 v9 v13 h-8 v13 h-3 v-13 h-10 z
-				M17,-7 v18 h5 v-18 z"/>
-				<g transform="translate(16,1)">
-					<g transform="translate(0.5,0.5)">
-						<g transform="translate(-11,1)">
-							<use x="-0.1" href="#col5_emoji"/>
-							<g transform="translate(5,0)">
-								<use x="+0.1" href="#col5_emoji"/>
+		<g id="z2" transform="translate(0,11)">
+			<path fill="red" d="M14,22 v2 h-14 v-35 h29 v35 h-9 v-2 h7 v-31 h-25 v31 z     M17,13 v13 h3 v-13 z"/>
+			<g transform="translate(0,9)">
+				<g id="shift_tens" transform="translate(0,-9)"><!-- (0,-b) met 0<=b<=9 -->
+					<rect fill="orange"      x="2" y="-9" width="2" height="22"/>
+					<rect fill="lightgreen" x="25" y="-9" width="2" height="22"/>
+					<path fill="yellow" d="M4,0 v-9 h21 v9 v13 h-8 v13 h-3 v-13 h-10 z      M17,-7 v18 h5 v-18 z"/>
+					<g transform="translate(16,1)">
+						<g transform="translate(0.5,0.5)">
+							<g transform="translate(-11,1)">
+								<use x="-0.1" href="#col5_emoji"/>
+								<g transform="translate(5,0)">
+									<use x="+0.1" href="#col5_emoji"/>
+								</g>
 							</g>
+							<use href="#OneNine"/>
 						</g>
-						<use href="#OneNine"/>
+						<g transform="translate(6,-0.25)">
+							<text class="chars" text-anchor="start">
+								<tspan x="0" dy="1.5" xml:space="preserve">tien  ^</tspan>
+								<tspan x="0" dy="0.5" xml:space="preserve">    tien</tspan>
+								<tspan x="0" dy="1">entwintig</tspan>
+								<tspan x="0" dy="1">endertig</tspan>
+								<tspan x="0" dy="1">enveertig</tspan>
+								<tspan x="0" dy="1">envijftig</tspan>
+								<tspan x="0" dy="1">enzestig</tspan>
+								<tspan x="0" dy="1">enzeventig</tspan>
+								<tspan x="0" dy="1">entachtig</tspan>
+								<tspan x="0" dy="1">ennegentig</tspan>
+							</text>
+							<path class="draw" d="M-8,0.25 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1"/>
+							<path class="draw" d="M0,0.75 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1"/>
+						</g>
 					</g>
-					<g transform="translate(6,-0.25)">
-						<text class="chars" text-anchor="start">
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve">tien  ^</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve">    tien</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5">entwintig</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5">endertig</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5">enveertig</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5">envijftig</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5">enzestig</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5">enzeventig</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5">entachtig</tspan>
-							<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
-							<tspan x="0" dy="0.5">ennegentig</tspan>
-						</text>
-						<g transform="translate(-8,0.25)">
-							<line x1="0" y1="0" x2="11" y2="0"/>
-							<line x1="0" y1="1" x2="11" y2="1"/>
-							<line x1="0" y1="2" x2="11" y2="2"/>
-							<line x1="0" y1="3" x2="11" y2="3"/>
-							<line x1="0" y1="4" x2="11" y2="4"/>
-							<line x1="0" y1="5" x2="11" y2="5"/>
-							<line x1="0" y1="6" x2="11" y2="6"/>
-							<line x1="0" y1="7" x2="11" y2="7"/>
-							<line x1="0" y1="8" x2="11" y2="8"/>
-							<line x1="0" y1="9" x2="11" y2="9"/>
-							<line x1="0" y1="10" x2="11" y2="10"/>
-						</g>
-						<g transform="translate(0,0.75)">
-							<line x1="0" y1="0" x2="3" y2="0"/>
-							<line x1="0" y1="1" x2="3" y2="1"/>
-							<line x1="0" y1="2" x2="3" y2="2"/>
-							<line x1="0" y1="3" x2="3" y2="3"/>
-							<line x1="0" y1="4" x2="3" y2="4"/>
-							<line x1="0" y1="5" x2="3" y2="5"/>
-							<line x1="0" y1="6" x2="3" y2="6"/>
-							<line x1="0" y1="7" x2="3" y2="7"/>
-							<line x1="0" y1="8" x2="3" y2="8"/>
-							<line x1="0" y1="9" x2="3" y2="9"/>
-						</g>
-						
+					<g class="digit" transform="translate(15.5,25.5)">
+						<text y="-10">/\ /\ /\</text>
+						<text y="-2">/\ +1</text>
+						<text>\/ -1</text>
 					</g>
 				</g>
-			</g>
-			<g class="digit" transform="translate(15.5,25.5)">
-				<text y="-10">/\ /\ /\</text>
-				<text y="-2">/\</text>
-				<text>\/</text>
 			</g>
 		</g>
 		
 		
-		<g id="z3">
+		<g id="z3" transform="translate(0,11)">
 			<path fill="red" d="M17,22 v2 h-17 v-35 h29 v35 h-9 v-2 h7 v-31 h-25 v31 z"/>
-			<g transform="translate(0,9)translate(0,-9)"><!-- (0,a) met 0<=a<=9 -->
-				<path fill="lightgreen" d="M2,-9 v22 h15 v13 h3 v-13 h7 v-22 z
-				M5,11 v-18 h12 v8 h1 v1 h4 v0.5 h2.5 v0.5 h-2.5 v0.5 h2.5 v7.5 z
-				M22.5,2 v-0.5 h2 v0.5 z"/>
-			</g>
-			<g class="digit" transform="translate(18.5,25.5)">
-				<text y="-10">/\ /\ /\</text>
-				<text y="-2">/\</text>
-				<text>\/</text>
+			<g transform="translate(0,9)">
+				<g id="shift_ones_top" transform="translate(0,-9)"><!-- (0,-a) met 0<=a<=9 -->
+					<path fill="lightgreen" d="M2,-9 v22 h15 v13 h3 v-13 h7 v-22 z
+					M5,11 v-18 h12 v8 h1 v1 h4 v0.5 h2.5 v0.5 h-2.5 v0.5 h2.5 v7.5 z
+					M22.5,2 v-0.5 h2 v0.5 z"/>
+					<g class="digit" transform="translate(18.5,25.5)">
+						<text y="-10">/\ /\ /\</text>
+						<text y="-2">/\ +1</text>
+						<text>\/ -1</text>
+					</g>
+				</g>
 			</g>
 		</g>
 
 
 		<g id="z4">
-			<path fill="red" d="M20.5,22 v2 h-20.5 v-35 h29 v35 h-4.5 v-2 h2.5 v-31 h-25 v31 z"/>
-			<g transform="translate(0,-0)translate(0,-0.5)"><!-- (0,d/2) met -1<=d<=1 -->
-				<path fill="lightblue" d="M2,0 v-8.5 h25 v8.5 v21.5 h-2.5 v5 h-4 v-5 h-18.5 z
-				M5,1.5 v10 h10 v-10 z
-				M16,9.5 v2 h2 v-2 z
-				M19,1.5 v10 h1 v-0.5 h4.5 v-1 h-4.5 v-8.5 z"/>
-				<g transform="translate(21,0)" class="chars">
-					<text y= "9.75" xml:space="preserve"> /\  /\  /\  /\ </text>
-					<text y="11.25" xml:space="preserve"> \/  \/  \/  \/ </text>
-					<text y="13.25" xml:space="preserve">^       ^</text>
-					<text y="13.75" xml:space="preserve"> \/  \/  \/ </text>
+			<path fill="red" d="M0,0 h29 v35 h-4.5 v-2 h2.5 v-31 h-25 v31 h18.5 v2 h-20.5 z"/>
+			<g transform="translate(2,2)">
+				<g transform="translate(0,0.5)">
+					<g id="shift_mask" transform="translate(0,-0.5)"><!-- (0,d) met d= -0.5 of 0 of 0.5 -->
+						<path fill="lightblue" d="M0,0 h25 v30 h-2.5 v5 h-4 v-5 h-18.5 z
+						M3,10 v10 h10 v-10 z
+						M14,18 v2 h2 v-2 z
+						M17,10 v10 h1 v-0.5 h4.5 v-1 h-4.5 v-8.5 z"/>
+						<g text-anchor="middle" transform="translate(20.5,19)" class="chars">
+							<text y="-0.75" xml:space="preserve"> /\  /\  /\  /\ </text>
+							<text y= "0.75" xml:space="preserve"> \/  \/  \/  \/ </text>
+							<g transform="translate(0,2.75)">
+								<text y="0"   xml:space="preserve">^       ^</text>
+								<text y="0.5" xml:space="preserve"> \/  \/  \/ </text>
+							</g>
+							<g transform="translate(0,15.5)">
+								<text y="-2.5">/\/\/\</text>
+								<text y="-2">/\ block bottom</text>
+								<text>\/ block top</text>
+							</g>
+						</g>
+					</g>
 				</g>
-			</g>
-			<g class="chars" text-anchor="middle" transform="translate(22.5,25.5)">
-				<text y="-2.5">/\/\/\</text>
-				<text y="-2">/\</text>
-				<text>\/</text>
 			</g>
 		</g>
 
@@ -259,32 +199,28 @@ ParaMetrisch met Search&Replace op unieke identifier verstopt ver achter de komm
 			M19,13 v9 h5.5 v-1 h-4.5 v-8 z
 			M20.5,24 v1 h4 v-1 z"/>
 			<text class="digit" x="20" y="23">0 = nul = geen</text>
-			<g transform="translate(25,20.75)">
-				<polyline points="0,0 1,0"/>
-				<polyline points="2,0 3,0"/>
-				<polyline points="0,0.5 3,0.5"/>
-				<polyline points="0,1 3,1"/>
-			</g>
+			<path class="draw" d="M25,20.75 h0.5 m0.5,0 h0.5 m-1.5,0.5 h1.5 m-1.5,0.5 h1.5"/>
 		</g>
+
 		
 	</defs>
-	<g transform="translate(0,-11)"><use x= "0" href="#z0"/></g>
-	<use x="30" href="#z4"/>
-	<g transform="translate(0,-11)"><use x="60" href="#z5"/></g>
+	<use href="#z0"/>
+	<use href="#z4" x="30"/>
+	<use href="#z5" x="60"/>
 	<g transform="translate(0,38)">
-		<use x= "0" href="#z1"/>
-		<use x="30" href="#z2"/>
-		<use x="60" href="#z3"/>
+		<use href="#z1"/>
+		<use href="#z2" x="30"/>
+		<use href="#z3" x="60"/>
 	</g>
 	<g transform="translate(-31,0)">
-		<rect x="-1" y="-12" width="122" height="77"/>
-		<g transform= "translate(0,15)"><!-- all layers repeated, but stacked -->
-		<g transform="translate(0,-11)"><use x= "0" href="#z0"/></g>
+		<rect x="-1" y="-1" width="122" height="77" fill="lightgrey"/>
+		<g transform="translate(0,15)"><!-- all layers repeated, but stacked -->
+			<use href="#z0"/>
 			<use href="#z1"/>
 			<use href="#z2"/>
 			<use href="#z3"/>
 			<use href="#z4"/>
-			<g transform="translate(0,-11)"><use href="#z5"/></g>
+			<use href="#z5"/>
 		</g>
 	</g>
 </svg>
