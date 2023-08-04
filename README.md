@@ -8,12 +8,11 @@ When I noticed a young kid able to do simple calculations with things, depiction
 First reasonable paper prototype: shifting 'tens' and 'ones'.<br>
 <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/getallenuitspreker_samengesteld.jpg">
   </td><td>
-But naming amounts is a little bit more irregular than that. To figure that out a minimal concept:<br>
+But naming amounts is a little bit more irregular than that. To figure that out: a minimal concept:<br>
 <img src="https://raw.githubusercontent.com/steltenpower/ElementarySchoolGimmicks/master/getallenuitspreker.jpg"></td></tr><tr><td colspan="3">
 Which together with the notion of needing physical constraints for how layers can be moved relative to each other, resulted in the current digital design:<br><img src="https://github.com/steltenpower/ElementarySchoolGimmicks/blob/master/getal_in_letters_v1.svg"><br>
-  The on/off of the trema, so "e" or "ë", is not taken into account yet.<br>
-  optional TODO:<br>
-  introduce empty colums/rows for sturdiness</td></tr>
+  The on/off of the trema, so "e" or "ë", is not taken into account (yet).<br>
+  optional TODO:<br></td></tr>
   <tr><td colspan="3"> Of course we need a english version as well, where "for-teen" and "twenty-four" show there's irregularity in the order of things in that language too.
   </td></tr></table>
 
