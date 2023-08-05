@@ -1,4 +1,5 @@
-<svg viewBox="-33 -2 124 80" width="124cm" height="80cm" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+<svg onload="init()" viewBox="-33 -2 124 80" width="124cm" height="80cm"
+ preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
 
 <!--
 Icon=Unicode+SpacingLeftRight/SpacingTopBottom
@@ -21,9 +22,12 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 		text,tspan{
 			dominant-baseline:middle;
 		}
-		.digit{
+		.digit,.annotation{
 			font-size:1px;
 			text-anchor:middle; 
+		}
+		.invisible{
+			visibility:hidden;
 		}
 		.chars{
 			font-size:0.5px;
@@ -65,7 +69,7 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 			<rect class="draw" width="1" height="1"/>
 			<text class="chars" x="0.2" y="0.5">cm</text>
 		</g>
-		<g transform="translate(3.5,2.3)scale(3)"><text class="digit">z=0</text></g>
+		<g transform="translate(3.5,2.3)scale(3)"><text class="annotation">z=0</text></g>
 	</g>
 
 
@@ -106,7 +110,7 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 					</g>
 				</g>
 			</g>
-			<g transform="translate(3.5,2.3)scale(3)"><text class="digit">z=1</text></g>
+			<g transform="translate(3.5,2.3)scale(3)"><text class="annotation">z=1</text></g>
 		</g>
 
 
@@ -149,15 +153,15 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 						</g>
 						<g class="digit" transform="translate(13.5,34.5)">
 							<text y="-10">/\ /\ /\</text>
-							<text y="-2">/\ +10</text>
-							<text>\/ -10</text>
+							<text y="-2" onclick="tens_inc()">/\ +10</text>
+							<text onclick="tens_dec()">\/ -10</text>
 						</g>
 					</g>
 				</g>
 			</g>
-			<g transform="translate(3.5,2.3)scale(3)"><text class="digit">z=2</text></g>
-			<g transform="translate(25.5,2.3)scale(3)"><text class="digit">z=2</text></g>
-			<g transform="translate(18.5,30)scale(1.5)"><text class="digit">z=2</text></g>
+			<g transform="translate(3.5,2.3)scale(3)"><text class="annotation">z=2</text></g>
+			<g transform="translate(25.5,2.3)scale(3)"><text class="annotation">z=2</text></g>
+			<g transform="translate(18.5,30)scale(1.5)"><text class="annotation">z=2</text></g>
 		</g>
 		
 		
@@ -170,12 +174,12 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 					M20.5,20 v-0.5 h2 v0.5 z"/>
 					<g class="digit" transform="translate(16.5,43.5)">
 						<text y="-10">/\ /\ /\</text>
-						<text y="-2">/\ +1</text>
-						<text>\/ -1</text>
+						<text y="-2" onclick="ones_inc()">/\ +1</text>
+						<text onclick="ones_dec()">\/ -1</text>
 					</g>
 				</g>
 			</g>
-			<g transform="translate(3.5,2.3)scale(3)"><text class="digit">z=3</text></g>
+			<g transform="translate(3.5,2.3)scale(3)"><text class="annotation">z=3</text></g>
 		</g>
 
 
@@ -197,14 +201,14 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 							</g>
 							<g transform="translate(0,15.5)">
 								<text y="-2.5">/\/\/\</text>
-								<text y="-2">/\ verstop onderste</text>
-								<text>\/ verstop bovenste</text>
+								<text y="-2" onclick="mask_up()">/\ verstop onderste</text>
+								<text onclick="mask_down()">\/ verstop bovenste</text>
 							</g>
 						</g>
 					</g>
 				</g>
 			</g>
-			<g transform="translate(3.5,2.3)scale(3)"><text class="digit">z=4</text></g>
+			<g transform="translate(3.5,2.3)scale(3)"><text class="annotation">z=4</text></g>
 		</g>
 
 
@@ -219,15 +223,7 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 
 		
 	</defs>
-	<use href="#z0"/>
-	<use href="#z4" x="30"/>
-	<use href="#z5" x="60"/>
-	<g transform="translate(0,38)">
-		<use href="#z1"/>
-		<use href="#z2" x="30"/>
-		<use href="#z3" x="60"/>
-	</g>
-	<g transform="translate(-31,0)">
+	<g id="stacked" transform="translate(-31,0)" visibility="hidden">
 		<g transform="translate(0,15)"><!-- all layers repeated, but stacked -->
 			<use href="#z0"/>
 			<use href="#z1"/>
@@ -237,4 +233,77 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 			<use href="#z5"/>
 		</g>
 	</g>
+	<g id="spread" visibility="visible">
+		<use href="#z0"/>
+		<use href="#z4" x="30"/>
+		<use href="#z5" x="60"/>
+		<g transform="translate(0,38)">
+			<use href="#z1"/>
+			<use href="#z2" x="30"/>
+			<use href="#z3" x="60"/>
+		</g>
+	</g>
+	<script>
+		function init(){
+			if (confirm("Speel met getallenverwoorder ipv bouwtekening te tonen?")) {
+				document.getElementById("spread").style.visibility="hidden";
+				document.getElementById("stacked").style.visibility="visible";
+				elms=document.getElementsByClassName("annotation");
+				for (elm of elms) {
+					elm.className="invisible";
+				}
+
+				//set rect,path fill-opacity=1;
+				//viewBox
+			}
+		}
+		function ones_inc(){
+			elm_top=document.getElementById("shift_ones_top");
+			value=parseInt(elm_top.getAttribute("transform").charAt(13));
+			if (value!=9){
+				elm_top.setAttribute("transform",("translate(0,-"+(value+1)+")"));
+				document.getElementById("shift_ones_bottom").setAttribute("transform",("translate(0,-"+(value+1)+")"));
+			}
+		}
+		function ones_dec(){
+			elm_top=document.getElementById("shift_ones_top");
+			value=parseInt(elm_top.getAttribute("transform").charAt(13));
+			if (value!=0){
+				elm_top.setAttribute("transform",("translate(0,-"+(value-1)+")"));
+				document.getElementById("shift_ones_bottom").setAttribute("transform",("translate(0,-"+(value-1)+")"));
+			}
+		}
+		function tens_inc(){
+			elm=document.getElementById("shift_tens");
+			value=parseInt(elm.getAttribute("transform").charAt(13));
+			if (value!=9) elm.setAttribute("transform",("translate(0,-"+(++value)+")"));
+		}
+		function tens_dec(){
+			elm=document.getElementById("shift_tens");
+			value=parseInt(elm.getAttribute("transform").charAt(13));
+			if (value!=0) elm.setAttribute("transform",("translate(0,-"+(--value)+")"));
+		}
+		function mask_up(){
+			elm=document.getElementById("shift_mask");
+			str=elm.getAttribute("transform").split(",")[1].split(")")[0];
+			if(str!="-0.5"){
+				if(str=="0"){
+					elm.setAttribute("transform","translate(0,-0.5)");
+				}else{
+					elm.setAttribute("transform","translate(0,0)");
+				}
+			}
+		}
+		function mask_down(){
+			elm=document.getElementById("shift_mask");
+			str=elm.getAttribute("transform").split(",")[1].split(")")[0];
+			if(str!="0.5"){
+				if(str=="0"){
+					elm.setAttribute("transform","translate(0,0.5)");
+				}else{
+					elm.setAttribute("transform","translate(0,0)");
+				}
+			}
+		}
+	</script>
 </svg>
