@@ -55,6 +55,7 @@ A variation on this find: <img src="https://upload.wikimedia.org/wikipedia/commo
 
 ### Egg boxes with labels to help with counting
 Built them. Just waiting for some time to shoot the video.
+<img src="https://www.kippenhuis.nl/media/catalog/product/cache/281fc391ee768b098bde07622c97cee9/e/i/eierdoos-large-10-eieren-kippenhuis.jpg"/>
 
 ### Font of characters kids learn writing, so I can type a text that kid can practice to write
 I should ask at my kids' school
