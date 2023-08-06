@@ -53,7 +53,7 @@ A variation on this find: <img src="https://upload.wikimedia.org/wikipedia/commo
 - Rings/bracelets that show digits (similar to what's on combination lock). With a viewing window to read the number from and to keep 2 rings together. Highlight zeroes as those trigger 'carry over'. Of course those high-tech knitters thought of the same: <a href="https://www.youtube.com/watch?v=ZLnXdEWwikk"><img src="https://www.jimmybeanswool.com/secure-html/productImages/85000/85167Large_b420.jpg"></a><br>
 - Necklace with beads that each have a number, starting with zero and from there add one every time (somebody must have made this, though the closest I got to finding it was this <a href="https://rhythmsofplay.com/alphabet-bead-necklace-craft-for-kids/"><img src="https://rhythmsofplay.com/wp-content/uploads/2017/09/Alphabet-bead-necklace-jewelry-for-kids-pin3-768x1153.jpg" width="20%"></a>
 
-### Egg boxes with labels to help with counting
+### Egg boxes with labels to help with counting and carry-over
 Built them. Just waiting for some time to shoot the video.
 <img src="https://www.kippenhuis.nl/media/catalog/product/cache/281fc391ee768b098bde07622c97cee9/e/i/eierdoos-large-10-eieren-kippenhuis.jpg"/>
 
