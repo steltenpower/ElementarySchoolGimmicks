@@ -6,18 +6,24 @@ Icon=Unicode+SpacingLeftRight/SpacingTopBottom
 Fonts get scrambled elsewhere
 
 ParaMetrisch met Search&Replace op unieke identifier verstopt ver achter de komma van waarde
-clean up code by using repetitive patterns? Rhino3D might not support it.
+Patterns for repeating circles/emoji? Rhino3D might not support it.
+
+TODO?: Show buttons for onclick area
+
+TODO: Figure out what to put on rightmost shifter
+
 -->
 	<style>
 		rect,path{
 			stroke:red;
    		    stroke-width: 0.01;
 			fill-rule: nonzero;
-			fill-opacity:0;
+			fill-opacity:1;
 		}
 		rect.draw,path.draw{
 			stroke:black;
 			stroke-width: 0.05;
+			fill:none;
 		}
 		text,tspan{
 			dominant-baseline:middle;
@@ -89,13 +95,13 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 						</g>
 						<g transform="translate(5,-0.25)">
 							<text class="chars" text-anchor="end">
-								<tspan x="0" dy="1.5" xml:space="preserve">^        elf</tspan>
+								<tspan x="0" dy="1.5" xml:space="preserve">&#8593;        elf</tspan>
 								<tspan x="0" dy="0.5">een</tspan>
-								<tspan x="0" dy="0.5" xml:space="preserve">^  twaalf</tspan>
+								<tspan x="0" dy="0.5" xml:space="preserve">&#8593;  twaalf</tspan>
 								<tspan x="0" dy="0.5">twee</tspan>
-								<tspan x="0" dy="0.5" xml:space="preserve">^       der</tspan>
+								<tspan x="0" dy="0.5" xml:space="preserve">&#8593;       der</tspan>
 								<tspan x="0" dy="0.5">drie</tspan>
-								<tspan x="0" dy="0.5" xml:space="preserve">^     veer</tspan>
+								<tspan x="0" dy="0.5" xml:space="preserve">&#8593;     veer</tspan>
 								<tspan x="0" dy="0.5">vier</tspan>
 								<tspan x="0" dy="1"  >vijf</tspan>
 								<tspan x="0" dy="1"  >zes</tspan>
@@ -115,14 +121,16 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 
 
 		<g id="z2">
-			<path fill="red" d="M 14,33 v2 h-14 v-35 h29 v35 h-9 v-2 h7 v-31 h-25 v31 z
-			                     M17,24 v13 h3 v-13 z"/>
+			<path fill="red" d="M0,0 h29 v35 h-9 v-2 h7 v-31 h-25 v31 h12 v2 h-14 z"/>
+			<g transform="translate(0,9)">
+				<rect id="shift_ones_middle" x="17" y="24" width="3" height="13" fill="orange" transform="translate(0,-9)"/>
+			</g>
 			<g transform="translate(2,2)">					 
 				<rect fill="orange"      width="2" height="22"/>
 				<rect fill="lightgreen" x="23" width="2" height="22"/>
 				<g transform="translate(0,9)">
 					<g id="shift_tens" transform="translate(0,-9)"><!-- (0,-b) met 0<=b<=9 -->
-						<path fill="yellow" d="M  2,9 v-9 h21 v9 v13 h-8 v13 h-3 v-13 h-10 z
+						<path fill="yellow"  onclick="tens_dec()" d="M  2,9 v-9 h21 v9 v13 h-8 v13 h-3 v-13 h-10 z
 												M15,2 v18 h5 v-18 z"/>
 						<g transform="translate(14,10)">
 							<g transform="translate(0.5,0.5)">
@@ -136,7 +144,7 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 							</g>
 							<g transform="translate(6,-0.25)">
 								<text class="chars" text-anchor="start">
-									<tspan x="0" dy="1.5" xml:space="preserve">tien  ^</tspan>
+									<tspan x="0" dy="1.5" xml:space="preserve">tien               &#8593;</tspan>
 									<tspan x="0" dy="0.5" xml:space="preserve">    tien</tspan>
 									<tspan x="0" dy="1">entwintig</tspan>
 									<tspan x="0" dy="1">endertig</tspan>
@@ -152,9 +160,9 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 							</g>
 						</g>
 						<g class="digit" transform="translate(13.5,34.5)">
-							<text y="-10">/\ /\ /\</text>
-							<text y="-2" onclick="tens_inc()">/\ +10</text>
-							<text onclick="tens_dec()">\/ -10</text>
+							<text y="-10.05">-------</text>
+							<text pointer-events="none" y="-1">-10</text>6
+							<text pointer-events="none">&#8595;</text>6
 						</g>
 					</g>
 				</g>
@@ -169,13 +177,13 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 			<path fill="red" d="M0,0 h29 v35 h-9 v-2 h7 v-31 h-25 v31 h15 v2 h-17 z"/>
 			<g id="shift_ones_top" transform="translate(0,-9)"><!-- (0,-a) met 0<=a<=9 -->
 				<g transform="translate(2,2)">
-					<path fill="lightgreen" d="M0,9 v22 h15 v13 h3 v-13 h7 v-22 z
-					M3,29 v-18 h12 v8 h1 v1 h4 v0.5 h2.5 v0.5 h-2.5 v0.5 h2.5 v7.5 z
-					M20.5,20 v-0.5 h2 v0.5 z"/>
+					<path fill="lightgreen" onclick="ones_dec()" d="M0,9 v22 h15 v13 h3 v-13 h7 v-22 z
+					M3,29 v-18 h12 v8 h1 v1 h4 v0.5 h3 v0.5 h-3 v0.5 h3 v7.5 z
+					M20.5,20 v-0.5 h2.5 v0.5 z"/>
 					<g class="digit" transform="translate(16.5,43.5)">
-						<text y="-10">/\ /\ /\</text>
-						<text y="-2" onclick="ones_inc()">/\ +1</text>
-						<text onclick="ones_dec()">\/ -1</text>
+						<text y="-10.05">-------</text>
+						<text pointer-events="none" y="-1">-1</text>
+						<text pointer-events="none">&#8595;</text>
 					</g>
 				</g>
 			</g>
@@ -184,25 +192,26 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 
 
 		<g id="z4">
-			<path fill="red" d="M0,0 h29 v35 h-4.5 v-2 h2.5 v-31 h-25 v31 h18.5 v2 h-20.5 z"/>
+			<path fill="red" d="M0,0 h29 v35 h-4 v-2 h2 v-31 h-25 v31 h18 v2 h-20 z"/>
 			<g transform="translate(2,2)">
 				<g transform="translate(0,0.5)">
 					<g id="shift_mask" transform="translate(0,-0.5)"><!-- (0,d) met d= -0.5 of 0 of 0.5 -->
-						<path fill="lightblue" d="M0,0 h25 v30 h-2.5 v5 h-4 v-5 h-18.5 z
+						<path fill="lightblue" onclick="mask_down()" d="M0,0 h25 v30 h-2 v5 h-5 v-5 h-18 z
 						M3,10 v10 h10 v-10 z
 						M14,18 v2 h2 v-2 z
-						M17,10 v10 h1 v-0.5 h4.5 v-1 h-4.5 v-8.5 z"/>
+						M17,10 v10 h1 v-1 h0.5 v0.5 h4 v-0.5 h0.5 v-0.5 h-5 v-8.5 z"/>
 						<g text-anchor="middle" transform="translate(20.5,19)" class="chars">
-							<text y="-0.75" xml:space="preserve">/\  /\  /\  /\</text>
-							<text y= "0.75" xml:space="preserve">\/  \/  \/  \/</text>
-							<g transform="translate(0,2.75)">
-								<text y="0"   xml:space="preserve">^       ^</text>
-								<text y="0.5" xml:space="preserve">\/  \/  \/</text>
-							</g>
-							<g transform="translate(0,15.5)">
-								<text y="-2.5">/\/\/\</text>
-								<text y="-2" onclick="mask_up()">/\ verstop onderste</text>
-								<text onclick="mask_down()">\/ verstop bovenste</text>
+							<text y="-0.75" xml:space="preserve">&#8593;</text>
+							<text y= "0.75" xml:space="preserve">&#8595;</text>
+							<!--<g transform="translate(0,2.75)">
+								<text y="0"   xml:space="preserve">&#8595;</text>
+								<text y="0.5" xml:space="preserve">&#8595;</text>
+							</g>-->
+							<g transform="translate(0,15.75)">
+								<text y="-2.3" xml:space="preserve" class="digit">-------</text>
+								<text y="-1.5" pointer-events="none">xxxxxxxxxxxxxxxxxxxx</text>
+								<text y="-1" pointer-events="none">~~~~~~~ ~~~~~~~</text>
+								<text pointer-events="none" class="digit" y="-0.25">&#8595;</text>
 							</g>
 						</g>
 					</g>
@@ -215,23 +224,26 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 		<g id="z5">
 			<path fill="red" d="M0,0 h29 v35 h-29 z
 			M5,13 v9 h10 v-9 z      M16,21 v1 h2 v-1 z
-			M19,13 v9 h5.5 v-1 h-4.5 v-8 z
-			M20.5,24 v1 h4 v-1 z"/>
+			M19,13 v9 h6 v-1 h-5 v-8 z"/><!-- M20.5,24 v1 h4 v-1 z -->
 			<text class="digit" x="20" y="23">0 = nul = geen</text>
-			<path class="draw" d="M25,20.75 h0.5 m0.5,0 h0.5 m-1.5,0.5 h1.5 m-1.5,0.5 h1.5"/>
+			<!--<path class="draw" d="M25,20.75 h0.5 m0.5,0 h0.5 m-1.5,0.5 h1.5 m-1.5,0.5 h1.5"/> streepjes -->
+			<text x="15.5" y="33.5" onclick="tens_inc()" class="digit">&#8593;</text>
+			<text x="15.5" y="34.5" onclick="tens_inc()" class="digit">+10</text>
+			<text x="18.5" y="33.5" onclick="ones_inc()" class="digit">&#8593;</text>
+			<text x="18.5" y="34.5" onclick="ones_inc()" class="digit">+1</text>
+			<text x="22.5" y="33.5" onclick="mask_up()" class="digit" xml:space="preserve">&#8593;                &#8593;</text>
+			<text x="22.5" y="34.5" onclick="mask_up()" class="chars" text-anchor="middle" xml:space="preserve">?  11  12  13  14  ?</text>
 		</g>
 
 		
 	</defs>
-	<g id="stacked" transform="translate(-31,0)" visibility="hidden">
-		<g transform="translate(0,15)"><!-- all layers repeated, but stacked -->
-			<use href="#z0"/>
-			<use href="#z1"/>
-			<use href="#z2"/>
-			<use href="#z3"/>
-			<use href="#z4"/>
-			<use href="#z5"/>
-		</g>
+	<g id="stacked" transform="translate(-31,15)" visibility="hidden"><!-- all layers repeated, but stacked -->
+		<use href="#z0"/>
+		<use href="#z1"/>
+		<use href="#z2"/>
+		<use href="#z3"/>
+		<use href="#z4"/>
+		<use href="#z5"/>
 	</g>
 	<g id="spread" visibility="visible">
 		<use href="#z0"/>
@@ -250,11 +262,25 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 				document.getElementById("stacked").style.visibility="visible";
 				elms=document.getElementsByClassName("annotation");
 				for (elm of elms) {
-					elm.className="invisible";
+					elm.className="invisible"; <!-- TODO?: try something with classList instead -->
 				}
 
-				//set rect,path fill-opacity=1;
-				//viewBox
+				//set rect,path fill-opacity=1; <!-- TODO?: make this real -->
+				//viewBox="-33 -2 124 80" becomes "-33 13 33 65" / "0 -2 91 80" <!-- TODO?: getElementsByTagName("svg")[0] -->
+				tens_dec();
+				tens_dec();
+				tens_dec();
+				tens_dec();
+				tens_dec();
+				tens_dec();
+				tens_dec();
+				tens_dec();
+				mask_down();
+				ones_dec();
+				ones_dec();
+				ones_dec();
+				ones_dec();
+				ones_dec();
 			}
 		}
 		function ones_inc(){
@@ -263,6 +289,7 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 			if (value!=9){
 				elm_top.setAttribute("transform",("translate(0,-"+(value+1)+")"));
 				document.getElementById("shift_ones_bottom").setAttribute("transform",("translate(0,-"+(value+1)+")"));
+				document.getElementById("shift_ones_middle").setAttribute("transform",("translate(0,-"+(value+1)+")"));
 			}
 		}
 		function ones_dec(){
@@ -271,6 +298,7 @@ clean up code by using repetitive patterns? Rhino3D might not support it.
 			if (value!=0){
 				elm_top.setAttribute("transform",("translate(0,-"+(value-1)+")"));
 				document.getElementById("shift_ones_bottom").setAttribute("transform",("translate(0,-"+(value-1)+")"));
+				document.getElementById("shift_ones_middle").setAttribute("transform",("translate(0,-"+(value-1)+")"));
 			}
 		}
 		function tens_inc(){
