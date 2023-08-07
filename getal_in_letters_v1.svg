@@ -1,5 +1,7 @@
-<svg onload="init()" viewBox="-33 -2 124 80" width="124cm" height="80cm"
- preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg onload="init()" viewBox="-33 -2 124 80" width="124cm" height="80cm"
+ preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
 <!--
 Icon=Unicode+SpacingLeftRight/SpacingTopBottom
@@ -13,7 +15,7 @@ TODO?: Show buttons for onclick area
 TODO: Figure out what to put on rightmost shifter
 
 -->
-	<style>
+	<style type="text/css">
 		rect,path{
 			stroke:red;
    		    stroke-width: 0.01;
@@ -61,11 +63,11 @@ TODO: Figure out what to put on rightmost shifter
 			</g>
 		</g>
 		<g id="col5_emoji">
-			<use x="0" href="#col_emoji"/>
-			<use x="1" href="#col_emoji"/>
-			<use x="2" href="#col_emoji"/>
-			<use x="3" href="#col_emoji"/>
-			<use x="4" href="#col_emoji"/>
+			<use x="0" xlink:href="#col_emoji"/>
+			<use x="1" xlink:href="#col_emoji"/>
+			<use x="2" xlink:href="#col_emoji"/>
+			<use x="3" xlink:href="#col_emoji"/>
+			<use x="4" xlink:href="#col_emoji"/>
 		</g>
 
 
@@ -86,12 +88,12 @@ TODO: Figure out what to put on rightmost shifter
 					<path fill="orange" d="M0,0 h25 v22 h-7 v13 h-3 v-13 h-15 z"/>
 					<g transform="translate(15,10)">
 						<g transform="translate(0.5,0.5)">
-							<use href="#OneNine"/>
+							<use xlink:href="#OneNine"/>
 							<text class="digit">
 								<tspan>0</tspan>
 								<tspan x="0" dy="1" xml:space="preserve"> </tspan>
 							</text>
-							<use x="2" y="1" href="#col_emoji"/>
+							<use x="2" y="1" xlink:href="#col_emoji"/>
 						</g>
 						<g transform="translate(5,-0.25)">
 							<text class="chars" text-anchor="end">
@@ -135,12 +137,12 @@ TODO: Figure out what to put on rightmost shifter
 						<g transform="translate(14,10)">
 							<g transform="translate(0.5,0.5)">
 								<g transform="translate(-11,1)">
-									<use x="-0.1" href="#col5_emoji"/>
+									<use x="-0.1" xlink:href="#col5_emoji"/>
 									<g transform="translate(5,0)">
-										<use x="+0.1" href="#col5_emoji"/>
+										<use x="+0.1" xlink:href="#col5_emoji"/>
 									</g>
 								</g>
-								<use href="#OneNine"/>
+								<use xlink:href="#OneNine"/>
 							</g>
 							<g transform="translate(6,-0.25)">
 								<text class="chars" text-anchor="start">
@@ -238,24 +240,24 @@ TODO: Figure out what to put on rightmost shifter
 		
 	</defs>
 	<g id="stacked" transform="translate(-31,15)" visibility="hidden"><!-- all layers repeated, but stacked -->
-		<use href="#z0"/>
-		<use href="#z1"/>
-		<use href="#z2"/>
-		<use href="#z3"/>
-		<use href="#z4"/>
-		<use href="#z5"/>
+		<use xlink:href="#z0"/>
+		<use xlink:href="#z1"/>
+		<use xlink:href="#z2"/>
+		<use xlink:href="#z3"/>
+		<use xlink:href="#z4"/>
+		<use xlink:href="#z5"/>
 	</g>
 	<g id="spread" visibility="visible">
-		<use href="#z0"/>
-		<use href="#z4" x="30"/>
-		<use href="#z5" x="60"/>
+		<use xlink:href="#z0"/>
+		<use xlink:href="#z4" x="30"/>
+		<use xlink:href="#z5" x="60"/>
 		<g transform="translate(0,38)">
-			<use href="#z1"/>
-			<use href="#z2" x="30"/>
-			<use href="#z3" x="60"/>
+			<use xlink:href="#z1"/>
+			<use xlink:href="#z2" x="30"/>
+			<use xlink:href="#z3" x="60"/>
 		</g>
 	</g>
-	<script>
+	<script type="text/javascript">
 		function init(){
 			if (confirm("Speel met getallenverwoorder ipv bouwtekening te tonen?")) {
 				document.getElementById("spread").style.visibility="hidden";
