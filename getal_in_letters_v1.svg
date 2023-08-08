@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg onload="init()" viewBox="-33 -2 124 80" width="124cm" height="80cm"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+ <svg onload="init()" viewBox="-33 -2 124 80" width="124cm" height="80cm"
  preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
 <!--
@@ -13,8 +14,8 @@ Patterns for repeating circles/emoji? Rhino3D might not support it.
 TODO?: Show buttons for onclick area
 
 TODO: Figure out what to put on rightmost shifter
-
 -->
+
 	<style type="text/css">
 		rect,path{
 			stroke:red;
