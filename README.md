@@ -58,7 +58,7 @@ Built them. Just waiting for some time to shoot the video.
 <img src="https://www.kippenhuis.nl/media/catalog/product/cache/281fc391ee768b098bde07622c97cee9/e/i/eierdoos-large-10-eieren-kippenhuis.jpg"/>
 
 ### Font of characters kids learn writing, so I can type a text that kid can practice to write
-I should ask at my kids' school
+At my kids school they did use the <a href="https://www.deschrijfvriend.nl/wandkaart-aan-boord-schrijfletters-cijfers/a6666">"Aan Boord"</a> writing method
 
 ### Pattern Recognition that does ping or BUZZ based on handwritten or spoken numbers
 Call it AI if you want
