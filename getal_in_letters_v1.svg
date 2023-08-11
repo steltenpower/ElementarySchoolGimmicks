@@ -212,8 +212,8 @@ TODO: Figure out what to put on rightmost shifter
 							</g>-->
 							<g transform="translate(0,15.75)">
 								<text y="-2.3" xml:space="preserve" class="digit">-------</text>
-								<text y="-1.5" pointer-events="none">xxxxxxxxxxxxxxxxxxxx</text>
-								<text y="-1" pointer-events="none">~~~~~~~ ~~~~~~~</text>
+								<text y="-1.5" pointer-events="none">xxxxxxxxxxxxxxxx</text>
+								<text y="-1" pointer-events="none">~~~~~~ ~~~~~~</text>
 								<text pointer-events="none" class="digit" y="-0.25">&#8595;</text>
 							</g>
 						</g>
