@@ -185,8 +185,8 @@ TODO: Figure out what to put on rightmost shifter
 					M20.5,20 v-0.5 h2.5 v0.5 z"/>
 					<g class="digit" transform="translate(16.5,43.5)">
 						<text y="-10.05">-------</text>
-						<text pointer-events="none" y="-1.2">-1</text>
-						<text pointer-events="none" y="-0.2">&#8595;</text>
+						<text pointer-events="none" y="-0.8">-1</text>
+						<text pointer-events="none" y="0.2">&#8595;</text>
 					</g>
 				</g>
 			</g>
