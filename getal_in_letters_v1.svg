@@ -28,7 +28,7 @@ TODO: Figure out what to put on rightmost shifter
 			stroke-width: 0.05;
 			fill:none;
 		}
-		text,tspan{
+		tspan{
 			dominant-baseline:middle;
 		}
 		.digit,.annotation{
