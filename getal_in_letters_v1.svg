@@ -164,8 +164,8 @@ TODO: Figure out what to put on rightmost shifter
 						</g>
 						<g class="digit" transform="translate(13.5,34.5)">
 							<text y="-10.05">-------</text>
-							<text pointer-events="none" y="-1">-10</text>
-							<text pointer-events="none">&#8595;</text>
+							<text pointer-events="none" y="-0.8">-10</text>
+							<text pointer-events="none" y="0.2">&#8595;</text>
 						</g>
 					</g>
 				</g>
