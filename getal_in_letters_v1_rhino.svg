@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg onload="init()" viewBox="-33 -2 124 80" width="124cm" height="80cm"
+ preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<!--
+Icon=Unicode+SpacingLeftRight/SpacingTopBottom
+Fonts get scrambled elsewhere
+
+ParaMetrisch met Search&Replace op unieke identifier verstopt ver achter de komma van waarde
+Patterns for repeating circles/emoji? Rhino3D might not support it.
+
+TODO?: Show buttons for onclick area
+
+-->
+
+	<style type="text/css">
+		rect,path{
+			stroke:red;
+   		    stroke-width: 0.01;
+			fill-rule: nonzero;
+			fill-opacity:1;
+		}
+		rect.draw,path.draw{
+			stroke:black;
+			stroke-width: 0.05;
+			fill:none;
+		}
+
+		.digit,.annotation{
+			font-size:1px;
+			text-anchor:middle; 
+		}
+		.chars{
+			font-size:0.5px;
+		}
+		tspan{
+			dominant-baseline:middle;
+		}
+
+		.invisible{
+			visibility:hidden;
+		}
+		/* do CSS work in Rhino3D? */
+	</style>
+	<defs>
+		<text id="OneNine" class="digit">
+			<tspan x="0" dy="1">1</tspan>
+			<tspan x="0" dy="1">2</tspan>
+			<tspan x="0" dy="1">3</tspan>
+			<tspan x="0" dy="1">4</tspan>
+			<tspan x="0" dy="1">5</tspan>
+			<tspan x="0" dy="1">6</tspan>
+			<tspan x="0" dy="1">7</tspan>
+			<tspan x="0" dy="1">8</tspan>
+			<tspan x="0" dy="1">9</tspan>
+			<tspan x="0" dy="1" xml:space="preserve"> </tspan>
+		</text>
+		<g id="col_emoji" transform="translate(0,-1)">
+			<g transform="translate(0,-0.1)">
+				<circle r="0.4" cy="1"/><circle r="0.4" cy="2"/><circle r="0.4" cy="3"/><circle r="0.4" cy="4"/><circle r="0.4" cy="5"/>
+			</g>
+			<g transform="translate(0,+0.1)">
+				<circle r="0.4" cy="6"/><circle r="0.4" cy="7"/><circle r="0.4" cy="8"/><circle r="0.4" cy="9"/>
+			</g>
+		</g>
+		<g id="col5_emoji">
+			<use x="0" xlink:href="#col_emoji"/>
+			<use x="1" xlink:href="#col_emoji"/>
+			<use x="2" xlink:href="#col_emoji"/>
+			<use x="3" xlink:href="#col_emoji"/>
+			<use x="4" xlink:href="#col_emoji"/>
+		</g>
+
+
+		<g id="z0">
+			<rect width="29" height="35" fill="red"/>
+			<g transform="translate(15,15)">
+				<rect class="draw" width="1" height="1"/>
+				<text class="chars" x="0.2" y="0.5">cm</text>
+			</g>
+			<g transform="translate(3.5,2.3)scale(3)"><text class="annotation">z=0</text></g>
+		</g>
+
+
+		<g id="z1">
+			<path fill="red" d="M0,0 h29 v35 h-9 v-2 h7 v-31 h-25 v31 h15 v2 h-17 z"/>
+			<g transform="translate(2,2)translate(0,9)">
+				<g id="shift_ones_bottom" transform="translate(0,-9)"><!-- (0,-a) met 0<=a<=9 -->
+					<path fill="orange" d="M0,0 h25 v22 h-7 v13 h-3 v-13 h-15 z"/>
+					<g transform="translate(15,10)">
+						<g transform="translate(0.5,0.5)">
+							<use xlink:href="#OneNine"/>
+							<text class="digit">
+								<tspan>0</tspan>
+								<tspan x="0" dy="1" xml:space="preserve"> </tspan>
+							</text>
+							<use x="2" y="1" xlink:href="#col_emoji"/>
+						</g>
+						<g transform="translate(5,-0.25)">
+							<text class="chars" text-anchor="end">
+								<tspan x="0" dy="1.5" xml:space="preserve">&#8593;        elf</tspan>
+								<tspan x="0" dy="0.5">een</tspan>
+								<tspan x="0" dy="0.5" xml:space="preserve">&#8593;  twaalf</tspan>
+								<tspan x="0" dy="0.5">twee</tspan>
+								<tspan x="0" dy="0.5" xml:space="preserve">&#8593;       der</tspan>
+								<tspan x="0" dy="0.5">drie</tspan>
+								<tspan x="0" dy="0.5" xml:space="preserve">&#8593;     veer</tspan>
+								<tspan x="0" dy="0.5">vier</tspan>
+								<tspan x="0" dy="1"  >vijf</tspan>
+								<tspan x="0" dy="1"  >zes</tspan>
+								<tspan x="0" dy="1"  >zeven</tspan>
+								<tspan x="0" dy="1"  >acht</tspan>
+								<tspan x="0" dy="1"  >negen</tspan>
+								<tspan x="0" dy="0.5" xml:space="preserve"> </tspan>
+							</text>
+							<path class="draw" d="M-5,0.25 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1 h5 m-5,1"/>
+							<path class="draw" d="M-2,0.75 h2 m-2,1 h2 m-2,1 h2 m-2,1 h2 m-2,1 h2 m-2,1 h2 m-2,1 h2 m-2,1 h2 m-2,1 h2 m-2,1 h2 m-2,1"/>
+						</g>
+					</g>
+				</g>
+			</g>
+			<g transform="translate(3.5,2.3)scale(3)"><text class="annotation">z=1</text></g>
+		</g>
+
+
+		<g id="z2">
+			<path fill="red" d="M0,0 h29 v35 h-9 v-2 h7 v-31 h-25 v31 h12 v2 h-14 z"/>
+			<g transform="translate(0,9)">
+				<rect id="shift_ones_middle" x="17" y="24" width="3" height="13" fill="orange" transform="translate(0,-9)"/>
+			</g>
+			<g transform="translate(2,2)">					 
+				<rect fill="orange"      width="2" height="22"/>
+				<rect fill="lightgreen" x="23" width="2" height="22"/>
+				<g transform="translate(0,9)">
+					<g id="shift_tens" transform="translate(0,-9)"><!-- (0,-b) met 0<=b<=9 -->
+						<path fill="yellow"  onclick="tens_dec()" d="M  2,9 v-9 h21 v9 v13 h-8 v13 h-3 v-13 h-10 z
+												M15,2 v18 h5 v-18 z"/>
+						<g transform="translate(14,10)">
+							<g transform="translate(0.5,0.5)">
+								<g transform="translate(-11,1)">
+									<use x="-0.1" xlink:href="#col5_emoji"/>
+									<g transform="translate(5,0)">
+										<use x="+0.1" xlink:href="#col5_emoji"/>
+									</g>
+								</g>
+								<use xlink:href="#OneNine"/>
+							</g>
+							<g transform="translate(6,-0.25)">
+								<text class="chars" text-anchor="start">
+									<tspan x="0" dy="1.5" xml:space="preserve">tien               &#8593;</tspan>
+									<tspan x="0" dy="0.5" xml:space="preserve">    tien</tspan>
+									<tspan x="0" dy="1">entwintig</tspan>
+									<tspan x="0" dy="1">endertig</tspan>
+									<tspan x="0" dy="1">enveertig</tspan>
+									<tspan x="0" dy="1">envijftig</tspan>
+									<tspan x="0" dy="1">enzestig</tspan>
+									<tspan x="0" dy="1">enzeventig</tspan>
+									<tspan x="0" dy="1">entachtig</tspan>
+									<tspan x="0" dy="1">ennegentig</tspan>
+								</text>
+								<path class="draw" d="M-8,0.25 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1 h3 m5,0 h3 m-11,1"/>
+								<path class="draw" d="M0,0.75 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1 h3 m-3,1"/>
+							</g>
+						</g>
+						<g class="digit" transform="translate(13.5,34.5)">
+							<text y="-10.05">-------</text>
+							<text pointer-events="none" y="-0.8">-10</text>
+							<text pointer-events="none" y="0.2">&#8595;</text>
+						</g>
+					</g>
+				</g>
+			</g>
+			<g transform="translate(3.5,2.3)scale(3)"><text class="annotation">z=2</text></g>
+			<g transform="translate(25.5,2.3)scale(3)"><text class="annotation">z=2</text></g>
+			<g transform="translate(18.5,30)scale(1.5)"><text class="annotation">z=2</text></g>
+		</g>
+		
+		
+		<g id="z3">
+			<path fill="red" d="M0,0 h29 v35 h-9 v-2 h7 v-31 h-25 v31 h15 v2 h-17 z"/>
+			<g id="shift_ones_top" transform="translate(0,-9)"><!-- (0,-a) met 0<=a<=9 -->
+				<g transform="translate(2,2)">
+					<path fill="lightgreen" onclick="ones_dec()" d="M0,9 v22 h15 v13 h3 v-13 h7 v-22 z
+					M3,29 v-18 h12 v8 h1 v1 h4 v0.5 h3 v0.5 h-3 v0.5 h3 v7.5 z
+					M20.5,20 v-0.5 h2.5 v0.5 z"/>
+					<g class="digit" transform="translate(16.5,43.5)" pointer-events="none">
+						<text y="-10.05">-------</text>
+						<text y="-0.8">-1</text>
+						<text y="0.2">&#8595;</text>
+					</g>
+				</g>
+			</g>
+			<g transform="translate(3.5,2.3)scale(3)"><text class="annotation">z=3</text></g>
+		</g>
+
+
+		<g id="z4">
+			<path fill="red" d="M0,0 h29 v35 h-4 v-2 h2 v-31 h-25 v31 h18 v2 h-20 z"/>
+			<g transform="translate(2,2)">
+				<g transform="translate(0,0.5)">
+					<g id="shift_mask" transform="translate(0,-0.5)"><!-- (0,d) met d= -0.5 of 0 of 0.5 -->
+						<path fill="lightblue" onclick="mask_down()" d="M0,0 h25 v30 h-2 v5 h-5 v-5 h-18 z
+						M3,10 v10 h10 v-10 z
+						M14,18 v2 h2 v-2 z
+						M17,10 v10 h1 v-1 h0.5 v0.5 h4 v-0.5 h0.5 v-0.5 h-5 v-8.5 z"/>
+						<g text-anchor="middle" transform="translate(20.5,19.1)" class="chars">
+							<text y="-0.75">&#8593;</text>
+							<text y= "0.75">&#8595;</text>
+							<g transform="translate(0,15.65)" pointer-events="none">
+								<text y="-2.3" xml:space="preserve" class="digit">-------</text>
+								<text y="-1.5">xxxxxxxxxxxxxxxx</text>
+								<text y="-1">~~~~~~ ~~~~~~</text>
+								<text class="digit" y="0.1">&#8595;</text><!-- TODO:outline -->
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+			<g transform="translate(3.5,2.3)scale(3)"><text class="annotation">z=4</text></g>
+		</g>
+
+
+		<g id="z5">
+			<path fill="red" d="M0,0 h29 v35 h-29 z
+			M5,13 v9 h10 v-9 z      M16,21 v1 h2 v-1 z
+			M19,13 v9 h6 v-1 h-5 v-8 z"/>
+			<text class="digit" x="20" y="23">0 = nul = geen</text>
+			<g transform="translate(15.5,33.5)" class="digit">
+				<text onclick="tens_inc()">
+					<tspan>&#8593;</tspan>
+					<tspan x="0" dy="1">+10</tspan>
+				</text>
+				<g transform="translate(3,0)">
+					<text onclick="ones_inc()">
+						<tspan>&#8593;</tspan>
+						<tspan x="0" dy="1">+1</tspan>
+					</text>
+				</g>
+				<g transform="translate(7,0)">
+					<text onclick="mask_up()">
+						<tspan xml:space="preserve"> &#8593;   &#8593;    &#8593;</tspan>
+						<tspan x="0" y="1" xml:space="preserve">11?12?13?14</tspan>
+					</text>
+				</g>
+			</g>
+		</g>
+
+		
+	</defs>
+	<g id="stacked" transform="translate(-31,15)" visibility="hidden"><!-- all layers repeated, but stacked -->
+		<use xlink:href="#z0"/>
+		<use xlink:href="#z1"/>
+		<use xlink:href="#z2"/>
+		<use xlink:href="#z3"/>
+		<use xlink:href="#z4"/>
+		<use xlink:href="#z5"/>
+	</g>
+	<g id="spread" visibility="visible">
+		<use xlink:href="#z0"/>
+		<use xlink:href="#z4" x="30"/>
+		<use xlink:href="#z5" x="60"/>
+		<g transform="translate(0,38)">
+			<use xlink:href="#z1"/>
+			<use xlink:href="#z2" x="30"/>
+			<use xlink:href="#z3" x="60"/>
+		</g>
+	</g>
+
+
+	<script type="text/javascript">
+		function init(){
+			if (confirm("Speel met getallenverwoorder ipv bouwtekening te tonen?")) {
+				document.getElementById("spread").style.visibility="hidden";
+				document.getElementById("stacked").style.visibility="visible";
+				elms=document.getElementsByClassName("annotation");
+				for (elm of elms) {
+					elm.className="invisible"; <!-- TODO?: try something with classList instead -->
+				}
+
+				//set rect,path fill-opacity=1; <!-- TODO?: make this real -->
+				//viewBox="-33 -2 124 80" becomes "-33 13 33 65" / "0 -2 91 80" <!-- TODO?: getElementsByTagName("svg")[0] -->
+				tens_dec();
+				tens_dec();
+				tens_dec();
+				tens_dec();
+				tens_dec();
+				tens_dec();
+				tens_dec();
+				tens_dec();
+				mask_down();
+				ones_dec();
+				ones_dec();
+				ones_dec();
+				ones_dec();
+				ones_dec();
+			}
+		}
+
+
+
+		function ones_inc(){
+			elm_top=document.getElementById("shift_ones_top");
+			value=parseInt(elm_top.getAttribute("transform").charAt(13));
+			if (value!=9){
+				elm_top.setAttribute("transform",("translate(0,-"+(value+1)+")"));
+				document.getElementById("shift_ones_bottom").setAttribute("transform",("translate(0,-"+(value+1)+")"));
+				document.getElementById("shift_ones_middle").setAttribute("transform",("translate(0,-"+(value+1)+")"));
+			}
+		}
+		function ones_dec(){
+			elm_top=document.getElementById("shift_ones_top");
+			value=parseInt(elm_top.getAttribute("transform").charAt(13));
+			if (value!=0){
+				elm_top.setAttribute("transform",("translate(0,-"+(value-1)+")"));
+				document.getElementById("shift_ones_bottom").setAttribute("transform",("translate(0,-"+(value-1)+")"));
+				document.getElementById("shift_ones_middle").setAttribute("transform",("translate(0,-"+(value-1)+")"));
+			}
+		}
+
+
+		function tens_inc(){
+			elm=document.getElementById("shift_tens");
+			value=parseInt(elm.getAttribute("transform").charAt(13));
+			if (value!=9) elm.setAttribute("transform",("translate(0,-"+(++value)+")"));
+		}
+		function tens_dec(){
+			elm=document.getElementById("shift_tens");
+			value=parseInt(elm.getAttribute("transform").charAt(13));
+			if (value!=0) elm.setAttribute("transform",("translate(0,-"+(--value)+")"));
+		}
+
+
+		function mask_up(){
+			elm=document.getElementById("shift_mask");
+			str=elm.getAttribute("transform").split(",")[1].split(")")[0];
+			if(str!="-0.5"){
+				if(str=="0"){
+					elm.setAttribute("transform","translate(0,-0.5)");
+				}else{
+					elm.setAttribute("transform","translate(0,0)");
+				}
+			}
+		}
+		function mask_down(){
+			elm=document.getElementById("shift_mask");
+			str=elm.getAttribute("transform").split(",")[1].split(")")[0];
+			if(str!="0.5"){
+				if(str=="0"){
+					elm.setAttribute("transform","translate(0,0.5)");
+				}else{
+					elm.setAttribute("transform","translate(0,0)");
+				}
+			}
+		}
+	</script>
+</svg>
