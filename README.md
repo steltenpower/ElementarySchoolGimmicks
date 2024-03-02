@@ -59,6 +59,9 @@ Or the 5ct character on a cubic bead at De Museumfabriek
 Built them. Just waiting for some time to shoot the video.
 <img src="https://www.kippenhuis.nl/media/catalog/product/cache/281fc391ee768b098bde07622c97cee9/e/i/eierdoos-large-10-eieren-kippenhuis.jpg"/>
 
+### Jumping from one number to the next on tiles or carpet
+<img src="https://www.spellenrijk.nl/resize/KKL-0200-2_13801260083754.jpg/500/500/True/cijferspelmat-2.webp"/>
+
 ### Font of characters kids learn writing, so I can type a text that kid can practice to write
 At my kids school they did use the <a href="https://www.deschrijfvriend.nl/wandkaart-aan-boord-schrijfletters-cijfers/a6666">"Aan Boord"</a> writing method
 
